@@ -31,7 +31,8 @@ def get_user_via_id(user_id):
 
 
 def get_user_via_email(email):
-	result = User.objects.filter(email__iregex=exact(email))
+	result = User.objects.filter(email=email)
+
 	return result[0] if len(result) > 0 else None
 
 
@@ -60,7 +61,10 @@ def get_cookie(cookie_id, token):
 	cookie_list = Cookie.objects.filter(id=Decimal(cookie_id))
 	if len(cookie_list) > 0 and cookie_list[0].token == token:
 		cookie = cookie_list[0]
-		if datetime.now() - cookie.lastTime < timedelta(hours=2):
+		dt = datetime.utcnow()
+		dt_cookie = cookie.lastTime
+		delta = dt - dt_cookie
+		if delta < timedelta(hours=2):
 			cookie.refresh()
 			return cookie
 

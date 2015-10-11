@@ -45,7 +45,7 @@ def handleCheckCookieRequest(request):
 	token = get.get('token')
 	sessionId = get.get('id')
 
-	cookie = models.getCookie(sessionId, token)
+	cookie = models.get_cookie(sessionId, token)
 	if cookie:
 		loginfo('valid cookie')
 		return HttpResponse(json.dumps({'userId': cookie.userId}))
@@ -66,13 +66,13 @@ def handleLoginRequest(request):
 	loginfo("login request")
 	loginfo("email: " + email)
 
-	user = models.getUserViaEmail(email)
+	user = models.get_user_via_email(email)
 	if user is None:
 		loginfo("user is none")
 
 	result = {}
 	if user and user.password == password:
-		cookie = models.generateCookie(user.id)
+		cookie = models.generate_cookie(user.id)
 		loginfo(str(cookie.id))
 		result['id'] = cookie.id
 		result['token'] = cookie.token
