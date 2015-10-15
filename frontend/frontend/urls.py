@@ -1,16 +1,14 @@
 from django.conf.urls import patterns, include, url
-from bookmarks import views
+from bookmarks import session_views as sview, bookmarks_views as bview, views
+
 
 urlpatterns = patterns('',
     url(r'^/?$', views.index),
     url(r'^index/?$', views.index),
-    url(r'^top/?$', views.topSites),
-    url(r'^bookmarks/?$', views.getBookmarks),
-    url(r'^me/?$', views.me),
-    url(r'^login/?$', views.login),
-    url(r'^logout/?$', views.logout),
-    url(r'^register/?$', views.register),
-    url(r'^addbookmark/?$', views.addBookmark),
-    url(r'^deletebookmark/?$', views.deleteBookmark),
-    url(r'^changebookmark/?$', views.changeBookmark),
+    url(r'^me/?$', sview.me),
+    url(r'^bookmarks/?$', bview.get_my_bookmarks),
+    url(r'^addbookmark/?$', bview.add_bookmark),
+    url(r'^login/?$', sview.login),
+    url(r'^logout/?$', sview.logout),
+    url(r'^register/?$', sview.register),
 )

@@ -2,29 +2,23 @@
 {% block title %} Bookmarks {% endblock %}
 {% block content %}
 
-<form action="/addbookmark" method="post">
-    URL:<br>
-    <input type="url" name="url"> <br>
-    <input type="hidden" name="pageurl" value="{{curPageUrl}}">
-    Description: <br>
-    <input type="text" name="description"><br>
-    <input type="submit" value="Add bookmark"/><br>
-</form>
-
+<br><br>
+<a href="/addbookmark">Add new bookmark</a>
+<br>
 <br>
 <table>
     <tr>
-        <th style="border-right=1px">URL</th>
-        <th>Description</th>
+        <th style="border-right=1px">Title</th>
+        <th></th>
     </tr>
     {% for bookmark in bookmarks %}
     <tr>
-        <td style="border-right=1px">{{bookmark.url}}</td>
+        <td style="border-right=1px"> {{bookmark.title}}}</td>
         <td>
         <form action="/changebookmark" method="post">
             <input type="hidden" name="pageurl" value="{{curPageUrl}}">
             <input type="hidden" name="id" value="{{bookmark.id}}">
-            <input type="text" name="description" value="{{bookmark.description}}">
+            <input type="text" name="title" value="{{bookmark.title}}">
             <input type="submit" value="Update"/>
         </form>
         </td>

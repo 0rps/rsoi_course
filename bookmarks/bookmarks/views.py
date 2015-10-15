@@ -140,7 +140,7 @@ def handle_get_user_bookmarks(request):
 
 	pages_count = paginator.num_pages
 
-	result = [x.json() for x in result.object_list]
+	result = [x.short_json() for x in result.object_list]
 	data = {'objects': result, 'pages': pages_count, 'cur_page': page}
 	data = json.dumps(data)
 

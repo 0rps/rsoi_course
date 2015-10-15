@@ -30,6 +30,17 @@ class Bookmark(models.Model):
 
 		return d
 
+	def short_json(self):
+		d = {}
+		d["title"] = self.title
+		d["username"] = self.username
+		d["user_id"] = self.user_id
+		d["is_public"] = self.is_public
+		d["time"] = self.time
+		d["id"] = self.id
+
+		return d
+
 
 class Tag(models.Model):
 	name = models.CharField(max_length=64)

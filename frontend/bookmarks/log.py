@@ -5,6 +5,7 @@ import datetime
 def log(message, level):
 	file = open('../frontend.log', 'a')
 	line = "{0}: {1} msg: {2}\n".format(level, datetime.datetime.now(), message)
+	print line
 	file.write(line)
 	file.close()
 

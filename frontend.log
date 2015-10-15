@@ -1,0 +1,357 @@
+INFO: 2015-10-06 18:46:35.848497 msg: GET /
+INFO: 2015-10-06 18:46:35.848745 msg: session is None
+INFO: 2015-10-06 18:46:49.397498 msg: GET /register/
+INFO: 2015-10-06 18:46:49.398340 msg: session is None
+INFO: 2015-10-06 18:47:22.536867 msg: POST /register/
+INFO: 2015-10-06 18:47:22.537282 msg: session is None
+INFO: 2015-10-06 18:47:30.246704 msg: POST /register/
+INFO: 2015-10-06 18:47:30.246786 msg: session is None
+INFO: 2015-10-06 18:47:33.324039 msg: GET /login
+INFO: 2015-10-06 18:47:33.324124 msg: session is None
+INFO: 2015-10-06 18:47:43.068377 msg: POST /login
+INFO: 2015-10-06 18:47:43.068475 msg: session is None
+INFO: 2015-10-06 18:47:45.766858 msg: POST /login
+INFO: 2015-10-06 18:47:45.768589 msg: session is None
+INFO: 2015-10-06 18:47:46.775721 msg: POST /login
+INFO: 2015-10-06 18:47:46.775955 msg: session is None
+INFO: 2015-10-06 18:47:47.349969 msg: POST /login
+INFO: 2015-10-06 18:47:47.350107 msg: session is None
+INFO: 2015-10-06 18:47:48.927394 msg: POST /login
+INFO: 2015-10-06 18:47:48.927638 msg: session is None
+INFO: 2015-10-06 18:47:50.393620 msg: GET /login
+INFO: 2015-10-06 18:47:50.393860 msg: session is None
+INFO: 2015-10-06 18:47:55.340443 msg: POST /login
+INFO: 2015-10-06 18:47:55.340443 msg: session is None
+INFO: 2015-10-06 18:47:57.244130 msg: POST /login
+INFO: 2015-10-06 18:47:57.246624 msg: session is None
+INFO: 2015-10-06 18:47:57.885691 msg: POST /login
+INFO: 2015-10-06 18:47:57.886081 msg: session is None
+INFO: 2015-10-06 18:48:25.255324 msg: POST /login
+INFO: 2015-10-06 18:48:25.258948 msg: session is None
+INFO: 2015-10-06 18:48:26.106597 msg: POST /login
+INFO: 2015-10-06 18:48:26.107300 msg: session is None
+INFO: 2015-10-06 18:48:26.752385 msg: POST /login
+INFO: 2015-10-06 18:48:26.752457 msg: session is None
+INFO: 2015-10-06 18:48:27.342143 msg: POST /login
+INFO: 2015-10-06 18:48:27.346345 msg: session is None
+INFO: 2015-10-06 18:48:29.354778 msg: GET /index
+INFO: 2015-10-06 18:48:29.356552 msg: session is None
+INFO: 2015-10-06 18:48:30.456913 msg: GET /top
+INFO: 2015-10-06 18:48:30.457093 msg: session is None
+INFO: 2015-10-06 18:48:36.238222 msg: GET /register/
+INFO: 2015-10-06 18:48:36.238515 msg: session is None
+INFO: 2015-10-06 18:48:37.448138 msg: GET /login
+INFO: 2015-10-06 18:48:37.448599 msg: session is None
+INFO: 2015-10-06 18:49:37.218964 msg: POST /login
+INFO: 2015-10-06 18:49:37.235469 msg: session is None
+INFO: 2015-10-06 18:50:26.533760 msg: POST /login
+INFO: 2015-10-06 18:50:26.586144 msg: session is None
+INFO: 2015-10-06 18:51:02.265527 msg: POST /login
+INFO: 2015-10-06 18:51:02.265813 msg: session is None
+INFO: 2015-10-06 19:03:26.268441 msg: POST /login
+INFO: 2015-10-06 19:03:26.410130 msg: session is None
+INFO: 2015-10-06 19:04:46.323627 msg: POST /login
+INFO: 2015-10-06 19:04:46.360973 msg: session is None
+INFO: 2015-10-06 19:44:09.057272 msg: GET /register/
+INFO: 2015-10-06 19:44:09.093145 msg: session is None
+INFO: 2015-10-06 19:44:32.726812 msg: POST /register/
+INFO: 2015-10-06 19:44:32.727290 msg: session is None
+INFO: 2015-10-06 19:45:26.520503 msg: GET /login
+INFO: 2015-10-06 19:45:26.540156 msg: session is None
+INFO: 2015-10-06 19:45:39.371417 msg: POST /login
+INFO: 2015-10-06 19:45:39.372315 msg: session is None
+INFO: 2015-10-06 19:46:31.641861 msg: POST /login
+INFO: 2015-10-06 19:46:31.994134 msg: session is None
+INFO: 2015-10-06 19:48:57.978705 msg: POST /login
+INFO: 2015-10-06 19:48:58.006276 msg: session is None
+INFO: 2015-10-06 19:50:48.007961 msg: POST /login
+INFO: 2015-10-06 19:50:48.051849 msg: session is None
+INFO: 2015-10-06 19:52:48.168074 msg: POST /login
+INFO: 2015-10-06 19:52:48.300297 msg: session is None
+INFO: 2015-10-06 19:54:11.740603 msg: POST /login
+INFO: 2015-10-06 19:54:11.774737 msg: session is None
+INFO: 2015-10-06 19:56:34.691482 msg: POST /login
+INFO: 2015-10-06 19:56:34.735650 msg: session is None
+INFO: 2015-10-06 19:57:06.913143 msg: GET /index
+INFO: 2015-10-06 19:57:17.815204 msg: session is None
+INFO: 2015-10-06 19:57:30.253025 msg: GET /index
+INFO: 2015-10-06 20:29:30.948281 msg: POST /login
+INFO: 2015-10-06 20:29:32.594178 msg: session is None
+INFO: 2015-10-06 20:31:19.727487 msg: POST /login
+INFO: 2015-10-06 20:32:07.257463 msg: session is None
+INFO: 2015-10-06 20:32:31.497980 msg: GET /index
+INFO: 2015-10-06 20:32:55.950521 msg: session is None
+INFO: 2015-10-06 20:34:17.311866 msg: GET /index
+INFO: 2015-10-06 20:37:07.312635 msg: GET /index
+INFO: 2015-10-06 20:37:34.870414 msg: session is None
+INFO: 2015-10-06 20:37:35.193856 msg: session is None
+INFO: 2015-10-06 20:47:09.742432 msg: GET /
+INFO: 2015-10-06 20:47:09.743117 msg: session is None
+INFO: 2015-10-06 20:47:17.927962 msg: GET /index
+INFO: 2015-10-06 20:47:17.928170 msg: session is None
+INFO: 2015-10-06 20:47:43.472477 msg: GET /login
+INFO: 2015-10-06 20:47:43.473386 msg: session is None
+INFO: 2015-10-06 20:47:50.016526 msg: POST /login
+INFO: 2015-10-06 20:47:50.016714 msg: session is None
+INFO: 2015-10-06 20:47:55.313611 msg: GET /index
+INFO: 2015-10-06 20:48:03.725511 msg: session is None
+INFO: 2015-10-06 20:48:50.745071 msg: GET /login
+INFO: 2015-10-06 20:49:22.364785 msg: session is None
+INFO: 2015-10-06 20:49:24.501085 msg: GET /index
+INFO: 2015-10-06 20:51:07.556598 msg: session is None
+INFO: 2015-10-06 20:51:16.719363 msg: GET /index
+INFO: 2015-10-06 20:51:39.446291 msg: session is None
+INFO: 2015-10-06 20:57:03.658452 msg: GET /login
+INFO: 2015-10-06 20:57:09.395009 msg: GET /index
+INFO: 2015-10-06 20:57:13.861179 msg: GET /me
+INFO: 2015-10-06 20:57:15.138969 msg: GET /index
+INFO: 2015-10-06 20:57:15.879087 msg: GET /top
+INFO: 2015-10-06 20:57:16.423555 msg: GET /bookmarks?page=1
+INFO: 2015-10-06 20:57:17.139123 msg: GET /me
+INFO: 2015-10-14 19:34:02.395018 msg: GET /
+INFO: 2015-10-14 19:34:02.404232 msg: session is None
+INFO: 2015-10-14 19:34:04.800189 msg: GET /register/
+INFO: 2015-10-14 19:34:04.800309 msg: session is None
+INFO: 2015-10-14 19:34:25.465022 msg: POST /register/
+INFO: 2015-10-14 19:34:25.465178 msg: session is None
+INFO: 2015-10-14 19:34:25.694243 msg: GET /login
+INFO: 2015-10-14 19:34:25.694367 msg: session is None
+INFO: 2015-10-14 19:34:31.160977 msg: POST /login
+INFO: 2015-10-14 19:34:31.161131 msg: session is None
+INFO: 2015-10-14 19:34:31.265967 msg: GET /index
+INFO: 2015-10-14 19:34:41.972692 msg: GET /index
+INFO: 2015-10-14 19:34:45.594911 msg: GET /me
+INFO: 2015-10-14 19:34:51.089756 msg: GET /logout
+INFO: 2015-10-14 19:34:51.189642 msg: GET /index
+INFO: 2015-10-14 19:34:51.189768 msg: session is None
+INFO: 2015-10-14 19:34:52.867903 msg: GET /login
+INFO: 2015-10-14 19:34:52.868071 msg: session is None
+INFO: 2015-10-14 19:34:57.835847 msg: POST /login
+INFO: 2015-10-14 19:34:57.835993 msg: session is None
+INFO: 2015-10-14 19:34:57.918482 msg: GET /index
+INFO: 2015-10-14 19:35:48.759543 msg: GET /me
+INFO: 2015-10-14 19:37:11.644652 msg: GET /me
+INFO: 2015-10-14 19:37:42.585003 msg: GET /index
+INFO: 2015-10-14 19:38:25.662801 msg: GET /index
+INFO: 2015-10-14 19:39:40.303430 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:02:27.572464 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:02:45.155015 msg: GET /index
+INFO: 2015-10-14 20:02:46.284771 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:06:49.638291 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:08:28.732582 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:09:05.397461 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:09:22.322809 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:09:22.430334 msg: ololo
+INFO: 2015-10-14 20:09:41.883186 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:09:41.986426 msg: ololo
+INFO: 2015-10-14 20:09:41.986595 msg: http://127.0.0.1:8003/bookmarks?bookmarks_user_id=3&userId=3&page=1&perpage=10
+INFO: 2015-10-14 20:09:59.314087 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:09:59.392994 msg: ololo
+INFO: 2015-10-14 20:09:59.393141 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&userId=3&page=1&perpage=10
+ERROR: 2015-10-14 20:10:00.176518 msg: request to favorites backend failed
+INFO: 2015-10-14 20:10:36.791732 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:10:36.853113 msg: ololo
+INFO: 2015-10-14 20:10:36.853285 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&userId=3&page=1&perpage=10
+ERROR: 2015-10-14 20:10:36.984718 msg: request to favorites backend failed
+INFO: 2015-10-14 20:10:50.185115 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:10:50.248659 msg: ololo
+INFO: 2015-10-14 20:10:50.248864 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&userId=3&page=1&perpage=10
+ERROR: 2015-10-14 20:10:50.389024 msg: request to favorites backend failed
+INFO: 2015-10-14 20:11:25.331597 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:11:25.393497 msg: ololo
+INFO: 2015-10-14 20:11:25.393715 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&userId=3&page=1&perpage=10
+ERROR: 2015-10-14 20:11:25.552394 msg: request to favorites backend failed
+INFO: 2015-10-14 20:11:39.990289 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:11:40.059643 msg: ololo
+INFO: 2015-10-14 20:11:40.059790 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&userId=3&page=1&perpage=10
+ERROR: 2015-10-14 20:11:40.417203 msg: request to favorites backend failed
+INFO: 2015-10-14 20:12:45.398509 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:12:45.484198 msg: ololo
+INFO: 2015-10-14 20:12:45.484361 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&userId=3&page=1&perpage=10
+ERROR: 2015-10-14 20:12:46.521198 msg: request to favorites backend failed
+INFO: 2015-10-14 20:13:15.465515 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:13:15.525632 msg: ololo
+INFO: 2015-10-14 20:13:15.525776 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&userId=3&page=1&perpage=10
+ERROR: 2015-10-14 20:13:16.404514 msg: request to favorites backend failed
+INFO: 2015-10-14 20:44:14.994708 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:44:15.043895 msg: ololo
+INFO: 2015-10-14 20:44:15.044046 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&userId=3&page=1&perpage=10
+ERROR: 2015-10-14 20:44:15.469687 msg: request to favorites backend failed
+INFO: 2015-10-14 20:45:08.932687 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:45:09.020522 msg: ololo
+INFO: 2015-10-14 20:45:09.020672 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&userId=3&page=1&perpage=10
+ERROR: 2015-10-14 20:45:09.507045 msg: request to favorites backend failed
+INFO: 2015-10-14 20:45:49.976226 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:45:50.034947 msg: ololo
+INFO: 2015-10-14 20:45:50.035120 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&userId=3&page=1&perpage=10
+ERROR: 2015-10-14 20:45:50.839263 msg: request to favorites backend failed
+INFO: 2015-10-14 20:45:59.182530 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:45:59.265642 msg: ololo
+INFO: 2015-10-14 20:45:59.265790 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&userId=3&page=1&perpage=10
+ERROR: 2015-10-14 20:45:59.755487 msg: request to favorites backend failed
+INFO: 2015-10-14 20:46:07.187041 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:46:07.259174 msg: ololo
+INFO: 2015-10-14 20:46:07.259354 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&userId=3&page=1&perpage=10
+ERROR: 2015-10-14 20:46:40.676643 msg: request to favorites backend failed
+INFO: 2015-10-14 20:46:56.212715 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:46:56.301447 msg: ololo
+INFO: 2015-10-14 20:46:56.301834 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&perpage=10
+ERROR: 2015-10-14 20:47:12.263906 msg: request to favorites backend failed
+INFO: 2015-10-14 20:47:43.035833 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:47:43.119206 msg: ololo
+INFO: 2015-10-14 20:47:43.119373 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&perpage=10
+ERROR: 2015-10-14 20:47:48.756552 msg: request to favorites backend failed
+INFO: 2015-10-14 20:48:15.972218 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:48:16.046709 msg: ololo
+INFO: 2015-10-14 20:48:16.047017 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&perpage=10
+ERROR: 2015-10-14 20:48:25.671182 msg: request to favorites backend failed
+INFO: 2015-10-14 20:48:37.582144 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:48:37.651999 msg: ololo
+INFO: 2015-10-14 20:48:37.652165 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&perpage=10
+ERROR: 2015-10-14 20:48:46.029679 msg: request to favorites backend failed
+INFO: 2015-10-14 20:51:18.723133 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:51:18.776913 msg: ololo
+INFO: 2015-10-14 20:51:18.777072 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&perpage=10
+ERROR: 2015-10-14 20:51:19.170002 msg: request to favorites backend failed
+INFO: 2015-10-14 20:52:22.636251 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:52:22.692094 msg: ololo
+INFO: 2015-10-14 20:52:22.692284 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&perpage=10
+ERROR: 2015-10-14 20:52:22.992014 msg: request to favorites backend failed
+INFO: 2015-10-14 20:52:46.210169 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:52:46.273618 msg: ololo
+INFO: 2015-10-14 20:52:46.273801 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&perpage=10
+ERROR: 2015-10-14 20:52:47.077081 msg: request to favorites backend failed
+INFO: 2015-10-14 20:53:46.884799 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:53:46.994858 msg: ololo
+INFO: 2015-10-14 20:53:46.995028 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&perpage=10
+ERROR: 2015-10-14 20:53:47.990143 msg: request to favorites backend failed
+INFO: 2015-10-14 20:54:11.952795 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:54:12.014775 msg: ololo
+INFO: 2015-10-14 20:54:12.015032 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&perpage=10
+ERROR: 2015-10-14 20:54:34.746328 msg: request to favorites backend failed
+INFO: 2015-10-14 20:55:01.600116 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:55:01.678670 msg: ololo
+INFO: 2015-10-14 20:55:01.678817 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&perpage=10
+ERROR: 2015-10-14 20:56:07.533154 msg: request to favorites backend failed
+INFO: 2015-10-14 20:58:36.603250 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:58:36.655284 msg: ololo
+INFO: 2015-10-14 20:58:36.655508 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&perpage=10
+INFO: 2015-10-14 20:59:02.052241 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:59:02.105923 msg: ololo
+INFO: 2015-10-14 20:59:02.106068 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&perpage=10
+ERROR: 2015-10-14 20:59:02.689939 msg: request to favorites backend failed
+ERROR: 2015-10-14 20:59:04.486974 msg: request to favorites backend failed
+INFO: 2015-10-14 20:59:16.343668 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:59:16.429869 msg: ololo
+INFO: 2015-10-14 20:59:16.430034 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+ERROR: 2015-10-14 20:59:17.077724 msg: request to favorites backend failed
+INFO: 2015-10-14 20:59:28.749100 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 20:59:28.832469 msg: ololo
+INFO: 2015-10-14 20:59:28.832645 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+ERROR: 2015-10-14 20:59:43.289466 msg: request to favorites backend failed
+INFO: 2015-10-14 21:00:45.337635 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:00:45.432507 msg: ololo
+INFO: 2015-10-14 21:00:45.432706 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:00:56.479206 msg: status code is 500
+ERROR: 2015-10-14 21:00:56.479382 msg: request to favorites backend failed
+INFO: 2015-10-14 21:01:41.914490 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:01:41.998452 msg: ololo
+INFO: 2015-10-14 21:01:41.998695 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:01:51.346397 msg: status code is 500
+ERROR: 2015-10-14 21:01:51.346631 msg: request to favorites backend failed
+INFO: 2015-10-14 21:01:58.410030 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:01:58.469296 msg: ololo
+INFO: 2015-10-14 21:01:58.469807 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:02:06.167583 msg: status code is 500
+ERROR: 2015-10-14 21:02:06.167739 msg: request to favorites backend failed
+INFO: 2015-10-14 21:02:59.359126 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:02:59.465861 msg: ololo
+INFO: 2015-10-14 21:02:59.466060 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:04:19.419327 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:04:19.501179 msg: ololo
+INFO: 2015-10-14 21:04:19.501428 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:05:37.273432 msg: status code is 500
+ERROR: 2015-10-14 21:05:37.273720 msg: request to favorites backend failed
+INFO: 2015-10-14 21:05:38.613814 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:05:38.686992 msg: ololo
+INFO: 2015-10-14 21:05:38.687140 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:05:46.174878 msg: status code is 500
+ERROR: 2015-10-14 21:05:46.175164 msg: request to favorites backend failed
+INFO: 2015-10-14 21:05:57.866910 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:05:57.966818 msg: ololo
+INFO: 2015-10-14 21:05:57.967081 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:06:23.899389 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:06:23.958622 msg: ololo
+INFO: 2015-10-14 21:06:23.958834 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:06:24.543473 msg: status code is 500
+ERROR: 2015-10-14 21:06:24.543640 msg: request to favorites backend failed
+INFO: 2015-10-14 21:06:26.161828 msg: status code is 500
+ERROR: 2015-10-14 21:06:26.161960 msg: request to favorites backend failed
+INFO: 2015-10-14 21:06:27.598949 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:06:27.695113 msg: ololo
+INFO: 2015-10-14 21:06:27.695289 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:06:30.491456 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:06:30.563730 msg: ololo
+INFO: 2015-10-14 21:06:30.563925 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:06:41.594062 msg: there is no prev page
+INFO: 2015-10-14 21:06:41.594232 msg: there is no next page
+INFO: 2015-10-14 21:07:07.844124 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:07:07.928318 msg: ololo
+INFO: 2015-10-14 21:07:07.928479 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:07:16.052550 msg: status code is 500
+ERROR: 2015-10-14 21:07:16.052733 msg: request to favorites backend failed
+INFO: 2015-10-14 21:10:36.982533 msg: GET /
+INFO: 2015-10-14 21:10:38.435816 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:10:38.496256 msg: ololo
+INFO: 2015-10-14 21:10:38.496731 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:10:39.326170 msg: status code is 500
+ERROR: 2015-10-14 21:10:39.326313 msg: request to favorites backend failed
+INFO: 2015-10-14 21:10:45.265338 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:10:45.378463 msg: ololo
+INFO: 2015-10-14 21:10:45.378709 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:10:45.933208 msg: status code is 500
+ERROR: 2015-10-14 21:10:45.933505 msg: request to favorites backend failed
+INFO: 2015-10-14 21:11:12.843652 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:11:12.915532 msg: ololo
+INFO: 2015-10-14 21:11:12.915833 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:11:13.721924 msg: status code is 500
+ERROR: 2015-10-14 21:11:13.722066 msg: request to favorites backend failed
+INFO: 2015-10-14 21:11:23.843679 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:11:23.919093 msg: ololo
+INFO: 2015-10-14 21:11:23.919434 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:11:35.231241 msg: status code is 500
+ERROR: 2015-10-14 21:11:35.231436 msg: request to favorites backend failed
+INFO: 2015-10-14 21:12:03.815206 msg: GET /bookmarks?page=1
+INFO: 2015-10-14 21:12:03.911469 msg: ololo
+INFO: 2015-10-14 21:12:03.911657 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-14 21:12:19.833589 msg: there is no prev page
+INFO: 2015-10-14 21:12:19.833917 msg: there is no next page
+INFO: 2015-10-15 19:45:21.588999 msg: GET /bookmarks?page=1
+INFO: 2015-10-15 19:45:21.644622 msg: session is None
+ERROR: 2015-10-15 19:45:21.644766 msg: authorization failed
+INFO: 2015-10-15 19:45:21.664729 msg: GET /login
+INFO: 2015-10-15 19:45:21.716466 msg: session is None
+INFO: 2015-10-15 19:45:29.263894 msg: POST /login
+INFO: 2015-10-15 19:45:29.322666 msg: session is None
+INFO: 2015-10-15 19:45:32.712473 msg: POST /login
+INFO: 2015-10-15 19:45:32.761369 msg: session is None
+INFO: 2015-10-15 19:45:33.854826 msg: GET /login
+INFO: 2015-10-15 19:45:33.909082 msg: session is None
+INFO: 2015-10-15 19:45:38.668785 msg: POST /login
+INFO: 2015-10-15 19:45:38.725727 msg: session is None
+INFO: 2015-10-15 19:45:38.803189 msg: GET /index
+INFO: 2015-10-15 19:45:40.355720 msg: GET /bookmarks?page=1
+INFO: 2015-10-15 19:45:40.429749 msg: ololo
+INFO: 2015-10-15 19:45:40.429923 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-15 19:45:40.858043 msg: there is no prev page
+INFO: 2015-10-15 19:45:40.858198 msg: there is no next page
+INFO: 2015-10-15 19:46:13.300339 msg: GET /bookmarks?page=1
+INFO: 2015-10-15 19:46:13.408467 msg: ololo
+INFO: 2015-10-15 19:46:13.408656 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-15 19:46:13.518326 msg: there is no prev page
+INFO: 2015-10-15 19:46:13.518564 msg: there is no next page
+INFO: 2015-10-15 19:46:31.455148 msg: GET /bookmarks?page=1
+INFO: 2015-10-15 19:46:31.534951 msg: ololo
+INFO: 2015-10-15 19:46:31.535189 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-15 19:46:31.720786 msg: there is no prev page
+INFO: 2015-10-15 19:46:31.720935 msg: there is no next page
