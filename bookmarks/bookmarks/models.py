@@ -32,12 +32,12 @@ class Bookmark(models.Model):
 
 	def short_json(self):
 		d = {}
-		d["title"] = self.title
-		d["username"] = self.username
-		d["user_id"] = self.user_id
-		d["is_public"] = self.is_public
-		d["time"] = self.time
-		d["id"] = self.id
+		d["title"] = str(self.title)
+		d["username"] = str(self.username)
+		d["user_id"] = str(self.user_id)
+		d["is_public"] = str(self.is_public)
+		d["time"] = str(self.time)
+		d["id"] = str(self.id)
 
 		return d
 
@@ -57,7 +57,7 @@ def split_title_on_tags(title):
 
 
 def find_tag(tag):
-	result = Tag.objects().filter(name=tag)
+	result = Tag.objects.filter(name=tag)
 	return result[0] if len(result) > 0 else None
 
 

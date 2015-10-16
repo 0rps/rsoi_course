@@ -38,3 +38,46 @@ INFO: 2015-10-14 21:12:04.171260 msg: GET /bookmarks?bookmarks_user_id=3&user_id
 INFO: 2015-10-15 19:45:40.747719 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
 INFO: 2015-10-15 19:46:13.418144 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
 INFO: 2015-10-15 19:46:31.544227 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-16 20:32:47.029886 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-16 20:34:56.258362 msg: POST /addbookmark
+INFO: 2015-10-16 20:43:31.793296 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-16 20:44:39.158858 msg: POST /addbookmark
+INFO: 2015-10-16 20:45:04.667282 msg: POST /addbookmark
+INFO: 2015-10-16 20:51:06.624761 msg: POST /addbookmark
+ERROR: 2015-10-16 20:51:10.573948 msg: null value in column "user_id" violates not-null constraint
+DETAIL:  Failing row contains (4, #first, this if, null, t, null, 2015-10-16 20:50:39.756791+00).
+
+INFO: 2015-10-16 20:52:33.647387 msg: POST /addbookmark
+INFO: 2015-10-16 20:54:33.937107 msg: POST /addbookmark
+INFO: 2015-10-16 20:54:44.690532 msg: POST /addbookmark
+INFO: 2015-10-16 20:55:14.845996 msg: POST /addbookmark
+INFO: 2015-10-16 20:55:21.186740 msg: Bookmark added
+INFO: 2015-10-16 20:56:01.198143 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-16 20:58:39.160512 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-16 21:12:46.243798 msg: POST /addbookmark
+INFO: 2015-10-16 21:12:46.317190 msg: Bookmark added
+INFO: 2015-10-16 21:14:19.716240 msg: POST /addbookmark
+INFO: 2015-10-16 21:14:19.778292 msg: Bookmark added
+INFO: 2015-10-16 21:14:24.404773 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-16 21:17:20.917598 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=10
+INFO: 2015-10-16 21:18:38.892251 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-16 21:18:49.000320 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=2&per_page=5
+INFO: 2015-10-16 21:18:50.916851 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-16 21:20:10.057377 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-16 21:20:41.147684 msg: POST /addbookmark
+INFO: 2015-10-16 21:20:41.221612 msg: Bookmark added
+INFO: 2015-10-16 21:20:41.482942 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-16 21:20:43.366955 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=2&per_page=5
+INFO: 2015-10-16 21:20:57.983945 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-16 21:30:49.460198 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-16 21:32:07.666909 msg: DELETE /removebookmark?id=5&user_id=3
+INFO: 2015-10-16 21:32:48.966946 msg: DELETE /removebookmark?id=5&user_id=3
+INFO: 2015-10-16 21:32:58.105868 msg: DELETE /removebookmark?id=5&user_id=3
+INFO: 2015-10-16 21:35:20.859471 msg: DELETE /removebookmark?id=5&user_id=3
+ERROR: 2015-10-16 21:36:09.892653 msg: Some params is NONE
+INFO: 2015-10-16 21:36:15.011405 msg: DELETE /removebookmark?bookmark_id=5&user_id=3
+INFO: 2015-10-16 21:36:50.498260 msg: DELETE /removebookmark?bookmark_id=5&user_id=3
+INFO: 2015-10-16 21:37:15.957986 msg: DELETE /removebookmark?bookmark_id=5&user_id=3
+INFO: 2015-10-16 21:37:22.216748 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-16 21:37:25.825683 msg: DELETE /removebookmark?bookmark_id=6&user_id=3
+INFO: 2015-10-16 21:37:28.837251 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5

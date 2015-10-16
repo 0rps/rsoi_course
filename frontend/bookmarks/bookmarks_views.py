@@ -10,7 +10,22 @@ def add_bookmark(request, session=None):
 	if request.method == 'POST':
 		form = forms.BookmarkForm(request.POST)
 		if form.is_valid():
-			response = requests.post(backendBookmarks + '/addbookmark', form.json())
+
+			query = "{0}/me?userId={1}".format(sessionServer, session['userId'])
+			response = requests.get(query)
+
+			profile = {}
+			if response.status_code == 200:
+				profile = response.json()
+			else:
+				logerror("bad request to session")
+				return HttpResponseBadRequest()
+
+			parameters = form.json()
+			parameters['user_id'] = session['userId']
+			parameters['username'] = "{0} {1}".format(profile['name'], profile['last_name'])
+
+			response = requests.post(backendBookmarks + '/addbookmark', parameters)
 			if response.status_code == 200:
 				result = HttpResponseRedirect(frontendServer + '/bookmarks')
 				return result
@@ -19,16 +34,19 @@ def add_bookmark(request, session=None):
 	else:
 		form = forms.BookmarkForm
 
-	return render(request, 'bookmark.html', {'form': form, 'logged': session, 'is_new': True})
+	parameters = {'form': form, 'logged': session, 'action_name': 'Create bookmark', 'title_name': 'Bookmark creation'}
+
+	return render(request, 'bookmark_handle_form.html', parameters)
 
 @csrf_exempt
 @printRequest
 @sessionWrapper
 @authorizationRequired
-def changeBookmark(request, session=None):
+def change_bookmark(request, session=None):
 	if request.method == 'POST':
 		form = forms.BookmarkForm(request.POST)
 		if form.is_valid():
+
 			response = requests.post(backendBookmarks + '/changebookmark', form.json())
 			if response.status_code == 200:
 				result = HttpResponseRedirect(frontendServer + '/bookmarks')
@@ -36,16 +54,20 @@ def changeBookmark(request, session=None):
 			else:
 				return HttpResponseBadRequest()
 	else:
+		#response = request.get("{0}/bookmark?id={1}")
+
 		form = forms.BookmarkForm
 
-	return render(request, 'bookmark.html', {'form': form, 'logged': session, 'is_new': False})
+	parameters = {'form': form, 'logged': session, 'action_name': 'Change bookmark', 'title_name': 'Change bookmark'}
+
+	return render(request, 'bookmark_handle_form.html', parameters)
 
 
 @csrf_exempt
 @printRequest
 @sessionWrapper
 @authorizationRequired
-def deleteBookmark(request, session=None):
+def remove_bookmark(request, session=None):
 	if request.method != 'POST':
 		logerror("is not POST method")
 		return HttpResponseForbidden()
@@ -61,8 +83,7 @@ def deleteBookmark(request, session=None):
 		logerror("some of parameters is None")
 		return HttpResponseBadRequest()
 
-	loginfo("last bookmark")
-	query = "{0}/removebookmark?id={1}&user_id={2}".format(backendBookmarks, id, session.user_id)
+	query = "{0}/removebookmark?bookmark_id={1}&user_id={2}".format(backendBookmarks, id, session['userId'])
 	response = requests.delete(query)
 	if response.status_code != 200:
 		logerror("request to backend bookmarks failed")
@@ -87,17 +108,15 @@ def get_my_bookmarks(request, session=None):
 	page = request.GET.get('page')
 
 	if page is None:
-		logerror("page param is None")
-		return HttpResponseBadRequest()
+		page = 1
 
 	query = "{0}/bookmarks?bookmarks_user_id={1}&user_id={1}&page={2}&per_page={3}"
-	query = query.format(backendBookmarks, session['userId'], page, 10)
-	loginfo("ololo")
+	query = query.format(backendBookmarks, session['userId'], page, 5)
 	loginfo(query)
 	response = requests.get(query)
 	if response.status_code != 200:
 		loginfo("status code is {0}".format(response.status_code))
-		logerror("request to favorites backend failed")
+		logerror("request to bookmarks backend failed")
 		return HttpResponseServerError()
 
 	response = response.json()

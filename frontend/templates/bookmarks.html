@@ -2,8 +2,6 @@
 {% block title %} Bookmarks {% endblock %}
 {% block content %}
 
-<br><br>
-<a href="/addbookmark">Add new bookmark</a>
 <br>
 <br>
 <table>
@@ -13,17 +11,16 @@
     </tr>
     {% for bookmark in bookmarks %}
     <tr>
-        <td style="border-right=1px"> {{bookmark.title}}}</td>
+        <td style="border-right=1px"> {{bookmark.title}}</td>
         <td>
         <form action="/changebookmark" method="post">
             <input type="hidden" name="pageurl" value="{{curPageUrl}}">
             <input type="hidden" name="id" value="{{bookmark.id}}">
-            <input type="text" name="title" value="{{bookmark.title}}">
-            <input type="submit" value="Update"/>
+            <input type="submit" value="Edit"/>
         </form>
         </td>
         <td>
-        <form action="/deletebookmark" method="post">
+        <form action="/removebookmark" method="post">
             <input type="hidden" name="pageurl" value="{{curPageUrl}}">
             <input type="hidden" name="id" value="{{bookmark.id}}">
             <input type="submit" value="Delete"/>
@@ -32,6 +29,9 @@
     </tr>
     {% endfor %}
 </table>
+<br>
+<br>
+<a href="/addbookmark">Add new bookmark</a>
 <br>
 <br>
 <table style="width:300; margin:auto">

@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 from django.http import HttpResponse, HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
-from django.core.paginator import  Paginator, EmptyPage, PageNotAnInteger
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from datetime import datetime
 from django.db.models import Count
 
@@ -34,29 +34,43 @@ def handle_add_bookmark(request):
 	bm.user_id = put.get('user_id')
 	bm.username = put.get('username')
 
-	bm.save()
+	try:
+		bm.save()
+	except Exception as e:
+		logerror(e.message)
+		return HttpResponseBadRequest
 
-	tags = models.get_tags(models.split_title_on_tags(bm.title))
+	raw_tags = models.split_title_on_tags(bm.title)
+	tags = models.get_tags(raw_tags)
 	for tag in tags:
 		bm_tag = models.BookmarkTag()
 		bm_tag.tag = tag
 		bm_tag.bookmark = bm
 		bm_tag.save()
 
+	loginfo("Bookmark added")
 	return HttpResponse()
 
 
 @csrf_exempt
 @printRequest
-def handle_delete_bookmark(request):
-	delete = request.DELETE
+def handle_remove_bookmark(request):
+	delete = request.REQUEST
 	bm_id = delete.get('bookmark_id')
 	user_id = delete.get('user_id')
 
-	bookmark = models.Bookmark.get(id=bm_id)[0]
+	if bm_id is None or  user_id is None:
+		logerror("Some params is NONE")
+		return HttpResponseBadRequest
+
+	bm_id = int(bm_id)
+	user_id = int(user_id)
+
+	#TODO: delete tags
+
+	bookmark = models.Bookmark.objects.get(pk=bm_id)
 	if user_id == bookmark.user_id:
 		bookmark.delete()
-		bookmark.save()
 		return HttpResponse()
 	else:
 		return HttpResponseBadRequest()
@@ -160,4 +174,3 @@ def handleCheckCookieRequest(request):
 	else:
 		loginfo('invalid cookie')
 		return HttpResponseBadRequest()
-
