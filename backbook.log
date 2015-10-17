@@ -81,3 +81,118 @@ INFO: 2015-10-16 21:37:15.957986 msg: DELETE /removebookmark?bookmark_id=5&user_
 INFO: 2015-10-16 21:37:22.216748 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
 INFO: 2015-10-16 21:37:25.825683 msg: DELETE /removebookmark?bookmark_id=6&user_id=3
 INFO: 2015-10-16 21:37:28.837251 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 12:23:15.979190 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 12:24:00.551961 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 12:25:20.720519 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 12:33:03.672391 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 12:33:09.450820 msg: bookmark is found
+INFO: 2015-10-17 12:33:46.963054 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 12:33:47.010450 msg: bookmark is found
+INFO: 2015-10-17 12:34:19.493147 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 12:34:23.407401 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 12:34:23.457250 msg: bookmark is found
+INFO: 2015-10-17 12:34:56.574919 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 12:34:58.221017 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 12:34:58.260067 msg: bookmark is found
+INFO: 2015-10-17 12:35:11.469023 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 12:35:13.280623 msg: GET /bookmark?bookmark_id=8
+INFO: 2015-10-17 12:35:13.331498 msg: bookmark is found
+INFO: 2015-10-17 12:40:33.039463 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 12:42:03.926339 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 12:43:36.933241 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 12:46:03.751446 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 12:46:26.615039 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 12:46:26.663211 msg: bookmark is found
+INFO: 2015-10-17 13:03:04.278735 msg: POST /changebookmark
+INFO: 2015-10-17 13:09:57.204639 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:10:13.460949 msg: POST /addbookmark
+INFO: 2015-10-17 13:10:13.553741 msg: Bookmark added
+INFO: 2015-10-17 13:10:14.029781 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:10:16.685221 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=2&per_page=5
+INFO: 2015-10-17 13:10:20.004129 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:10:30.830649 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=2&per_page=5
+INFO: 2015-10-17 13:10:32.656422 msg: GET /bookmark?bookmark_id=12
+INFO: 2015-10-17 13:10:32.708379 msg: bookmark is found
+INFO: 2015-10-17 13:10:38.547806 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:11:34.830627 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 13:11:34.870344 msg: bookmark is found
+INFO: 2015-10-17 13:11:58.753422 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 13:11:58.795459 msg: bookmark is found
+INFO: 2015-10-17 13:12:06.625009 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 13:12:06.685895 msg: bookmark is found
+INFO: 2015-10-17 13:12:19.912482 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 13:12:19.965855 msg: bookmark is found
+INFO: 2015-10-17 13:12:31.637677 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 13:12:31.691321 msg: bookmark is found
+INFO: 2015-10-17 13:12:33.965395 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:12:38.652655 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 13:12:38.700677 msg: bookmark is found
+INFO: 2015-10-17 13:13:24.058385 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 13:13:24.105809 msg: bookmark is found
+INFO: 2015-10-17 13:22:21.730287 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:22:36.082201 msg: POST /addbookmark
+INFO: 2015-10-17 13:22:36.193793 msg: Bookmark added
+INFO: 2015-10-17 13:22:36.568418 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:22:38.876593 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=2&per_page=5
+INFO: 2015-10-17 13:22:40.309756 msg: GET /bookmark?bookmark_id=13
+INFO: 2015-10-17 13:22:40.352919 msg: bookmark is found
+INFO: 2015-10-17 13:22:42.252269 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:22:45.372991 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 13:22:45.422911 msg: bookmark is found
+INFO: 2015-10-17 13:23:07.743508 msg: POST /changebookmark
+INFO: 2015-10-17 13:24:58.643781 msg: POST /changebookmark
+INFO: 2015-10-17 13:25:16.520386 msg: POST /changebookmark
+INFO: 2015-10-17 13:25:53.231886 msg: POST /changebookmark
+INFO: 2015-10-17 13:26:16.355588 msg: POST /changebookmark
+INFO: 2015-10-17 13:26:33.500592 msg: POST /changebookmark
+INFO: 2015-10-17 13:27:12.938473 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:27:15.134813 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 13:27:15.174176 msg: bookmark is found
+INFO: 2015-10-17 13:27:40.894541 msg: POST /changebookmark
+INFO: 2015-10-17 13:28:06.289423 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:29:42.271567 msg: GET /bookmark?bookmark_id=7
+INFO: 2015-10-17 13:29:42.316342 msg: bookmark is found
+INFO: 2015-10-17 13:32:54.243382 msg: POST /changebookmark
+INFO: 2015-10-17 13:33:14.326160 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:33:18.536493 msg: GET /bookmark?bookmark_id=8
+INFO: 2015-10-17 13:33:18.604044 msg: bookmark is found
+INFO: 2015-10-17 13:33:46.615186 msg: POST /changebookmark
+INFO: 2015-10-17 13:33:56.958083 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:34:04.616398 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=2&per_page=5
+INFO: 2015-10-17 13:34:07.542705 msg: GET /bookmark?bookmark_id=8
+INFO: 2015-10-17 13:34:07.601464 msg: bookmark is found
+INFO: 2015-10-17 13:39:18.091621 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:39:24.155362 msg: GET /bookmark?bookmark_id=9
+INFO: 2015-10-17 13:39:24.232666 msg: bookmark is found
+INFO: 2015-10-17 13:39:35.928569 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:39:40.604191 msg: DELETE /removebookmark?bookmark_id=9&user_id=3
+INFO: 2015-10-17 13:39:41.138686 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 13:39:44.857078 msg: DELETE /removebookmark?bookmark_id=7&user_id=3
+INFO: 2015-10-17 13:39:45.634952 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 14:40:03.740380 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 14:40:13.346985 msg: GET /bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-17 14:43:25.126013 msg: GET /bookmarks?bookmarks_user_id=3&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 14:46:05.848813 msg: GET /bookmarks?bookmarks_user_id=3&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 14:47:12.565128 msg: GET /bookmarks?bookmarks_user_id=3&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 14:48:27.702491 msg: GET /bookmarks?bookmarks_user_id=3&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 14:49:22.992420 msg: GET /bookmarks?bookmarks_user_id=3&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 14:50:03.887790 msg: GET /bookmarks?bookmarks_user_id=3&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 14:51:01.356302 msg: GET /bookmarks?bookmarks_user_id=3&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 14:51:35.885729 msg: GET /bookmarks?bookmarks_user_id=3&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 14:52:32.690587 msg: GET /bookmarks?bookmarks_user_id=4&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 14:52:47.068441 msg: POST /addbookmark
+INFO: 2015-10-17 14:52:47.194807 msg: Bookmark added
+INFO: 2015-10-17 14:52:47.733519 msg: GET /bookmarks?bookmarks_user_id=4&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 14:52:58.595593 msg: GET /bookmarks?bookmarks_user_id=3&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 14:53:02.486024 msg: GET /bookmarks?bookmarks_user_id=3&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 18:46:57.120696 msg: GET /bookmarks?bookmarks_user_id=3&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 18:52:46.785643 msg: GET /bookmarks?bookmarks_user_id=3&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 18:53:00.230262 msg: GET /bookmark?bookmark_id=11
+INFO: 2015-10-17 18:53:00.328915 msg: bookmark is found
+INFO: 2015-10-17 18:53:06.670726 msg: GET /bookmark?bookmark_id=10
+INFO: 2015-10-17 18:53:06.744892 msg: bookmark is found
+INFO: 2015-10-17 18:53:11.602983 msg: GET /bookmarks?bookmarks_user_id=4&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 18:53:15.538324 msg: GET /bookmark?bookmark_id=14
+INFO: 2015-10-17 18:53:15.592616 msg: bookmark is found
+INFO: 2015-10-17 18:53:25.518609 msg: GET /bookmarks?bookmarks_user_id=4&user_id=4&page=1&per_page=5
+INFO: 2015-10-17 20:45:46.839645 msg: GET /bookmarks?bookmarks_user_id=4&user_id=4&page=1&per_page=5

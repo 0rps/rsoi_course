@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %} Search {% endblock %}
+{% block content %}
+
+<br>
+<br>
+<table>
+    <tr>
+        <th style="border-right=1px">Search on tags: {{text}} </th>
+        <th></th>
+    </tr>
+    {% for bookmark in bookmarks %}
+    <tr>
+        <td style="border-right=1px"><a href="/bookmark?bookmark_id={{bookmark.id}}"> {{bookmark.title}}</a></td>
+
+        <td>
+        <a href="/user?user_id={{bookmark.user_id}}"> {{bookmark.profile.full_name}}</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br>
+<br>
+<table style="width:300; margin:auto">
+    <tr>
+        {%if prevPage %}
+        <td><a href="{{prevPage.url}}">Previous page</a></td>
+        {% endif %}
+        <td>Page {{pageNumber}}</td>
+        {%if nextPage %}
+        <td><a href="{{nextPage.url}}">Next page</a></td>
+        {% endif %}
+    </tr>
+</table>
+
+{% endblock %}

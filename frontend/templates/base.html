@@ -8,11 +8,16 @@
     <table >
         <tr>
             <td style="margin-left: 10px"> <a href="http://127.0.0.1:8000/index">Main</a> </td>
-            <td> <a href="http://127.0.0.1:8000/search">Search</a> </td>
             {% if logged %}
                 <td> <a href="http://127.0.0.1:8000/bookmarks?page=1">My bookmarks</a> </td>
                 <td> <a href="http://127.0.0.1:8000/me">Profile</a> </td>
                 <td> <a href="http://127.0.0.1:8000/logout">Logout</a> </td>
+                <td>
+                    <form action="/search" method="get">
+                    <input name="search_text" type="text" size="20">
+                    <input type="submit" value="Search"/>
+                    </form>
+                </td>
             {% else %}
                 <td> <a href="http://127.0.0.1:8000/login">Log in</a> </td>
                 <td> <a href="http://127.0.0.1:8000/register">Register</a> </td>

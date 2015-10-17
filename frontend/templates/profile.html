@@ -1,6 +1,12 @@
 {% extends "base.html" %}
-{% block title %} Profile {% endblock %}
+{% block title %} User profile {% endblock %}
 {% block content %}
+
+{%if my_profile %}
+<p><b>Your profile</b></p>
+{% else %}
+<p><b>Profile</b></p>
+{% endif%}
 
 <table>
     <tr>
@@ -11,11 +17,21 @@
         <td>Surname: </td>
         <td>{{ profile.last_name}}</td>
     </tr>
+    {%if my_profile %}
     <tr>
         <td>Email: </td>
         <td>{{ profile.email }}</td>
     </tr>
+    </table>
+    {% else %}
+        </table>
+        <br><br><a href="/userbookmarks?page=1&user_id={{user_id}}">Show user bookmarks</a>
+        {%if subscribed %}
+        <br><br><a href="/unsubscribe?user_id={{user_id}}">Unsubscribe</a>
+        {% else %}
+        <br><br><a href="/subscribe?user_id={{user_id}}">Subscribe</a>
+        {% endif %}
+    {% endif %}
 
-</table>
 
 {% endblock %}

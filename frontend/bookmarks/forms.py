@@ -26,6 +26,7 @@ class BookmarkForm(forms.Form):
 	title = forms.CharField(label=mark_safe('<br>Bookmark title<br>'), max_length=None)
 	description = forms.CharField(label=mark_safe('<br>Your description<br>'), max_length=None)
 	is_public = forms.BooleanField(label=mark_safe('<br>Is public<br>'))
+	bookmark_id = forms.IntegerField(widget=forms.HiddenInput(), required=False)
 
 	def json(self):
 		data = self.cleaned_data
@@ -37,6 +38,12 @@ class BookmarkForm(forms.Form):
 
 		return result
 
+	def full_json(self):
+		result = self.json()
+		data = self.cleaned_data
+		result['bookmark_id'] = data['bookmark_id']
+
+		return result
 
 class SigninForm(forms.Form):
 	email = forms.EmailField(label=mark_safe('<br>Your email<br>'))

@@ -1,6 +1,10 @@
 __author__ = 'orps'
 
+from django.views.decorators.http import require_http_methods
+
 from views_settings import *
+
+from myutils import *
 
 @csrf_exempt
 @printRequest
@@ -46,19 +50,39 @@ def change_bookmark(request, session=None):
 	if request.method == 'POST':
 		form = forms.BookmarkForm(request.POST)
 		if form.is_valid():
-
-			response = requests.post(backendBookmarks + '/changebookmark', form.json())
+			parameters = form.full_json()
+			parameters['user_id'] = session['userId']
+			response = requests.post(backendBookmarks + '/changebookmark', parameters)
 			if response.status_code == 200:
 				result = HttpResponseRedirect(frontendServer + '/bookmarks')
 				return result
 			else:
 				return HttpResponseBadRequest()
 	else:
-		#response = request.get("{0}/bookmark?id={1}")
+		bid = request.GET.get('id')
+		if bid is None:
+			logerror('id is none')
+			return HttpResponseBadRequest()
 
-		form = forms.BookmarkForm
+		response = requests.get("{0}/bookmark?bookmark_id={1}".format(backendBookmarks, bid))
+		if response.status_code != 200:
+			logerror("wrong query to bookback")
+			return HttpResponseBadRequest()
 
-	parameters = {'form': form, 'logged': session, 'action_name': 'Change bookmark', 'title_name': 'Change bookmark'}
+		response = response.json()
+
+		if int(response['user_id']) != int(session['userId']):
+			logerror('Forbidden')
+			return HttpResponseForbidden()
+
+		data = {'title': response['title'],
+				'description': response['description'],
+				'is_public': bool(response['is_public']),
+				'bookmark_id': int(bid)}
+		form = forms.BookmarkForm(initial=data)
+		form.fields['title'].widget.attrs['readonly'] = True
+
+	parameters = {'form': form, 'logged': session, 'action_name': 'Save bookmark', 'title_name': 'Change bookmark'}
 
 	return render(request, 'bookmark_handle_form.html', parameters)
 
@@ -96,6 +120,145 @@ def remove_bookmark(request, session=None):
 	url = "{0}/bookmarks?page={1}".format(frontendServer, 1)
 	loginfo('redirect to 1 page')
 	return HttpResponseRedirect(url)
+
+
+@require_http_methods(['GET'])
+@printRequest
+@sessionWrapper
+@authorizationRequired
+def get_bookmark(request, session=None):
+	get = request.GET
+
+	bookmark_id = get.get('bookmark_id')
+	if bookmark_id is None:
+		return HttpResponseBadRequest()
+
+	query = "{0}/bookmark?bookmark_id={1}".format(backendBookmarks, bookmark_id)
+	responce = requests.get(query)
+	if responce.status_code != 200:
+		logerror("There is no bookmark")
+		return HttpResponseBadRequest()
+
+	responce = responce.json()
+	if responce['user_id'] != session['userId'] and bool(responce['is_public'] is False):
+		logerror("there is no access to private bookmark of other user")
+		return HttpResponseForbidden()
+
+	parameters = {'logged': session, 'bookmark': responce}
+	return render(request, 'bookmark.html', parameters)
+
+@require_http_methods(['GET'])
+@printRequest
+@sessionWrapper
+@authorizationRequired
+def get_user_bookmarks(request, session=None):
+	get = request.GET
+
+	page = get.get('page')
+	user_id = get.get('user_id')
+
+	if page is None:
+		page = 1
+
+	if int(user_id) == int(session['userId']):
+		query = "{0}/bookmarks?page={1}".format(frontendServer, page)
+		return HttpResponseRedirect(query)
+
+	query = "{0}/bookmarks?bookmarks_user_id={1}&user_id={2}&page={3}&per_page={4}"
+	query = query.format(backendBookmarks, user_id, session['userId'], page, 5)
+	loginfo(query)
+	response = requests.get(query)
+	if response.status_code != 200:
+		loginfo("status code is {0}".format(response.status_code))
+		logerror("request to bookmarks backend failed")
+		return HttpResponseServerError()
+
+	response = response.json()
+
+	page = int(response['cur_page'])
+	total = int(response['pages'])
+
+	if page > 1:
+		loginfo("there is prev page")
+		prev_page = {'num': page-1, 'url': "{0}/userbookmarks?page={1}&user_id={2}".format(frontendServer, page-1, user_id)}
+	else:
+		loginfo("there is no prev page")
+		prev_page = None
+
+	if page < total:
+		loginfo("there is next page")
+		next_page = {'num': page+1, 'url': "{0}/userbookmarks?page={1}&user_id={2}".format(frontendServer, page+1, user_id)}
+	else:
+		loginfo("there is no next page")
+		next_page = None
+
+	page_number = page
+	profile = get_profile(user_id)
+
+	bookmarks = response['objects']
+
+	return render(request, "user_bookmarks.html", {'logged': session,
+												  'profile': profile,
+											  'bookmarks': bookmarks,
+											  'pageNumber': page_number,
+											  'prevPage': prev_page,
+											  'nextPage': next_page})
+
+
+@printRequest
+@sessionWrapper
+@authorizationRequired
+def search_bookmarks(request, session=None):
+	get = request.GET
+
+	text = get.get('search_text')
+	page = get.get('page')
+	if page is None:
+		page = 1
+
+	query = "{0}/search?search_text={1}&page={2}&per_page={3}".format(backendBookmarks,
+																	  page, 5)
+	response = requests.get(query)
+	if response.status_code != 200:
+		logerror("error in query to backbook")
+		return HttpResponseBadRequest()
+
+	response = response.json()
+
+	page = int(response['cur_page'])
+	total = int(response['pages'])
+
+	if page > 1:
+		loginfo("there is prev page")
+		prev_page = {'num': page-1, 'url': "{0}/search?search_text={1}&page={1}".format(frontendServer, text, page-1)}
+	else:
+		loginfo("there is no prev page")
+		prev_page = None
+
+	if page < total:
+		loginfo("there is next page")
+		next_page = {'num': page-1, 'url': "{0}/search?search_text={1}&page={1}".format(frontendServer, text, page+1)}
+	else:
+		loginfo("there is no next page")
+		next_page = None
+
+	page_number = page
+
+	profiles = {}
+	bookmarks = response['objects']
+	for book in bookmarks:
+		user_id = book['user_id']
+		if user_id not in profiles:
+			profiles[user_id] = get_profile(user_id)
+		book['profile'] = profiles[user_id]
+
+	return render(request, "user_bookmarks.html", {'logged': session,
+												   'text': text,
+											  'bookmarks': bookmarks,
+											  'pageNumber': page_number,
+											  'prevPage': prev_page,
+											  'nextPage': next_page})
+
 
 @printRequest
 @sessionWrapper

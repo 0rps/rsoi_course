@@ -6,32 +6,15 @@
 <br>
 <table>
     <tr>
-        <th style="border-right=1px">Bookmarks</th>
+        <th style="border-right=1px">Bookmarks of {{profile.full_name}}</th>
         <th></th>
     </tr>
     {% for bookmark in bookmarks %}
     <tr>
         <td style="border-right=1px"><a href="/bookmark?bookmark_id={{bookmark.id}}"> {{bookmark.title}}</a></td>
-        <td>
-        <form action="/changebookmark" method="get">
-            <input type="hidden" name="pageurl" value="{{curPageUrl}}">
-            <input type="hidden" name="id" value="{{bookmark.id}}">
-            <input type="submit" value="Edit"/>
-        </form>
-        </td>
-        <td>
-        <form action="/removebookmark" method="post">
-            <input type="hidden" name="pageurl" value="{{curPageUrl}}">
-            <input type="hidden" name="id" value="{{bookmark.id}}">
-            <input type="submit" value="Delete"/>
-        </form>
-        </td>
     </tr>
     {% endfor %}
 </table>
-<br>
-<br>
-<a href="/addbookmark">Add new bookmark</a>
 <br>
 <br>
 <table style="width:300; margin:auto">

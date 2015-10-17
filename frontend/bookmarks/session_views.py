@@ -15,7 +15,7 @@ def me(request, session=None):
 		profile = response.json()
 	else:
 		logerror("bad request to session")
-	return render(request, "profile.html", {'logged': session, 'profile': profile})
+	return render(request, "profile.html", {'logged': session, 'profile': profile, 'my_profile': True})
 
 
 @printRequest
@@ -78,3 +78,31 @@ def logout(request, session=None):
 		return result
 
 	return HttpResponseRedirect("{0}/login".format(frontendServer))
+
+
+@printRequest
+@sessionWrapper
+@authorizationRequired
+def user_profile(request, session=None):
+
+	get = request.GET
+	user_id = get.get('user_id')
+	if user_id is None:
+		logerror("user_id is None")
+		return HttpResponseBadRequest()
+
+	#if int(session['userId']) == int(user_id):
+	#	return HttpResponseRedirect("/me")
+
+	query = "{0}/me?userId={1}".format(sessionServer, session['userId'])
+	response = requests.get(query)
+	profile = {}
+	if response.status_code == 200:
+		profile = response.json()
+	else:
+		logerror("bad request to session")
+		return HttpResponseBadRequest()
+
+	return render(request, "profile.html", {'logged': session,
+											'profile': profile,
+											'my_profile': False, 'user_id': user_id})

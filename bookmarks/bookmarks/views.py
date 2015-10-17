@@ -82,13 +82,13 @@ def handle_change_bookmark(request):
 	post = request.POST
 
 	id = post.get('bookmark_id')
-	bm = models.Bookmark.objects.get(id=id)[0]
-	if bm.user_id != post.get('user_id'):
+	bm = models.Bookmark.objects.get(pk=int(id))
+	if bm.user_id != int(post.get('user_id')):
 		return HttpResponseBadRequest()
 
-	bm.is_public = post.get('is_public')
+	bm.is_public = bool(post.get('is_public'))
 	bm.description = post.get('description')
-	bm.title = post.get('title')
+	bm.time = datetime.now()
 	bm.save()
 
 	#TODO: delete all old tags
@@ -136,7 +136,10 @@ def handle_get_user_bookmarks(request):
 
 	bm_list = None
 	try:
-		bm_list = models.Bookmark.objects.filter(is_public=(bookmarks_user_id==user_id), user_id=bookmarks_user_id)
+		if bookmarks_user_id == user_id:
+			bm_list = models.Bookmark.objects.filter(user_id=bookmarks_user_id)
+		else:
+			bm_list = models.Bookmark.objects.filter(is_public=True, user_id=bookmarks_user_id)
 	except Exception as e:
 		logerror(e.message)
 		return HttpResponseBadRequest()
@@ -159,6 +162,25 @@ def handle_get_user_bookmarks(request):
 	data = json.dumps(data)
 
 	return HttpResponse(data)
+
+@printRequest
+def handle_get_user_bookmark(request):
+	get = request.GET
+	id = get.get('bookmark_id')
+
+	if id is None:
+		logerror("Id is none")
+		return HttpResponseBadRequest()
+
+	try:
+		bookmark = models.Bookmark.objects.get(pk=int(id))
+	except Exception as e:
+		logerror(e.message)
+		return HttpResponseBadRequest
+
+	loginfo("bookmark is found")
+
+	return HttpResponse(json.dumps(bookmark.full_json()))
 
 
 @printRequest
