@@ -1,0 +1,172 @@
+INFO: 2015-10-18 15:44:50.621838 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:45:21.024286 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:45:21.106746 msg: GET /subscribe?owner=3&subscriber=4
+INFO: 2015-10-18 15:46:00.522614 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:46:05.394258 msg: GET /subscribe?owner=3&subscriber=4
+INFO: 2015-10-18 15:46:25.203872 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:46:25.285825 msg: GET /subscribe?owner=3&subscriber=4
+INFO: 2015-10-18 15:47:38.304906 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:47:38.416360 msg: GET /subscribe?owner=3&subscriber=4
+ERROR: 2015-10-18 15:47:44.293126 msg: unbound method save() must be called with Subscriber instance as first argument (got nothing instead)
+INFO: 2015-10-18 15:48:56.090870 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:48:56.180990 msg: GET /subscribe?owner=3&subscriber=4
+ERROR: 2015-10-18 15:49:00.924088 msg: unbound method save() must be called with Subscriber instance as first argument (got nothing instead)
+INFO: 2015-10-18 15:49:42.299385 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:49:42.393240 msg: GET /subscribe?owner=3&subscriber=4
+INFO: 2015-10-18 15:50:41.302171 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:50:48.526698 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:50:48.617492 msg: GET /unsubscribe?owner=3&subscriber=4
+INFO: 2015-10-18 15:50:48.687240 msg: success
+INFO: 2015-10-18 15:50:48.932115 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:50:52.192538 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:50:53.775940 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:50:53.867475 msg: GET /subscribe?owner=3&subscriber=4
+INFO: 2015-10-18 15:51:20.855580 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:51:21.167808 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:51:22.299062 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:51:22.399477 msg: GET /unsubscribe?owner=3&subscriber=4
+INFO: 2015-10-18 15:51:22.460899 msg: success
+INFO: 2015-10-18 15:51:22.694365 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:51:23.713691 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:51:23.806365 msg: GET /subscribe?owner=3&subscriber=4
+INFO: 2015-10-18 15:51:33.773038 msg: success
+INFO: 2015-10-18 15:51:36.190302 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:51:47.907048 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 15:51:47.996074 msg: GET /unsubscribe?owner=3&subscriber=4
+INFO: 2015-10-18 15:51:48.046156 msg: success
+INFO: 2015-10-18 15:51:48.274698 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 16:07:49.552855 msg: POST /add
+INFO: 2015-10-18 16:08:13.841119 msg: record created
+INFO: 2015-10-18 16:08:16.077547 msg: news created
+INFO: 2015-10-18 16:08:30.519821 msg: DELETE /remove?bookmark_id=16
+INFO: 2015-10-18 16:08:40.542589 msg: Record matching query does not exist.
+INFO: 2015-10-18 16:08:50.783265 msg: DELETE /remove?bookmark_id=15
+INFO: 2015-10-18 16:09:22.597103 msg: Record matching query does not exist.
+INFO: 2015-10-18 16:09:29.971722 msg: POST /add
+INFO: 2015-10-18 16:10:26.733847 msg: record created
+INFO: 2015-10-18 16:10:26.740187 msg: news created
+INFO: 2015-10-18 16:10:42.903577 msg: POST /add
+INFO: 2015-10-18 16:10:45.876380 msg: record created
+INFO: 2015-10-18 16:10:45.885613 msg: news created
+INFO: 2015-10-18 16:10:47.977722 msg: DELETE /remove?bookmark_id=18
+INFO: 2015-10-18 16:10:56.487039 msg: success
+INFO: 2015-10-18 16:46:20.645148 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 16:46:39.449839 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 16:46:56.531019 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 16:47:09.289412 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 16:47:38.564893 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 16:47:48.995893 msg: success
+INFO: 2015-10-18 16:48:41.621588 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 16:48:44.984607 msg: success
+INFO: 2015-10-18 16:48:53.049573 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 16:49:52.986505 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 16:50:17.568777 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 16:50:31.454977 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 16:51:12.934038 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 16:51:49.469967 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 16:51:49.503975 msg: success
+INFO: 2015-10-18 16:52:04.911079 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 16:52:06.957874 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 16:52:07.054943 msg: GET /subscribe?owner=3&subscriber=4
+INFO: 2015-10-18 16:52:10.539573 msg: success
+INFO: 2015-10-18 16:52:10.802690 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 16:52:13.228486 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 16:52:13.271197 msg: success
+INFO: 2015-10-18 16:52:15.317497 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 16:52:28.905391 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 16:52:54.729951 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 16:53:04.110217 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 16:53:08.925176 msg: success
+INFO: 2015-10-18 16:53:31.740299 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 16:53:35.006798 msg: success
+INFO: 2015-10-18 16:53:49.247975 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 16:53:49.279945 msg: success
+INFO: 2015-10-18 16:54:00.391686 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 16:54:00.438573 msg: success
+INFO: 2015-10-18 16:54:11.456594 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 16:54:11.487764 msg: success
+INFO: 2015-10-18 16:56:18.480371 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 16:56:18.514049 msg: success
+INFO: 2015-10-18 16:56:19.914741 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 16:57:14.498442 msg: POST /add
+INFO: 2015-10-18 16:57:18.200324 msg: record created
+INFO: 2015-10-18 16:57:18.206758 msg: news created
+INFO: 2015-10-18 16:58:07.196227 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 16:58:07.235924 msg: success
+INFO: 2015-10-18 16:58:45.782564 msg: GET /news?per_page=5&user_id=3&page=1
+INFO: 2015-10-18 16:58:45.825785 msg: success
+INFO: 2015-10-18 16:58:50.734879 msg: GET /newsownerslist?user_id=3
+INFO: 2015-10-18 16:58:50.769933 msg: success
+INFO: 2015-10-18 16:59:14.662620 msg: POST /add
+INFO: 2015-10-18 16:59:14.704578 msg: record created
+INFO: 2015-10-18 16:59:14.718421 msg: news created
+INFO: 2015-10-18 16:59:18.989493 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 16:59:19.033979 msg: success
+INFO: 2015-10-18 16:59:50.261437 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 16:59:50.311608 msg: success
+INFO: 2015-10-18 17:00:26.016705 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:01:19.133043 msg: success
+INFO: 2015-10-18 17:01:25.907382 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:01:32.480260 msg: success
+INFO: 2015-10-18 17:01:38.208113 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:02:10.066786 msg: success
+INFO: 2015-10-18 17:02:15.263223 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:02:15.314690 msg: success
+INFO: 2015-10-18 17:03:18.942280 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:03:18.992736 msg: success
+INFO: 2015-10-18 17:03:34.963186 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:03:35.012268 msg: success
+INFO: 2015-10-18 17:04:34.264355 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:04:34.325212 msg: success
+INFO: 2015-10-18 17:05:24.209523 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:05:24.265170 msg: success
+INFO: 2015-10-18 17:05:42.203368 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:05:42.260593 msg: success
+INFO: 2015-10-18 17:05:53.665785 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 17:05:53.702925 msg: success
+INFO: 2015-10-18 17:05:57.040060 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:05:57.094760 msg: success
+INFO: 2015-10-18 17:06:06.068501 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 17:06:09.856563 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 17:06:09.961208 msg: GET /unsubscribe?owner=3&subscriber=4
+INFO: 2015-10-18 17:06:10.025737 msg: success
+INFO: 2015-10-18 17:06:10.297841 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 17:06:13.187993 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:06:13.228286 msg: success
+INFO: 2015-10-18 17:06:27.559387 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 17:06:29.839814 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 17:06:29.937151 msg: GET /subscribe?owner=3&subscriber=4
+INFO: 2015-10-18 17:06:30.008750 msg: success
+INFO: 2015-10-18 17:06:30.265757 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 17:06:32.596244 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:06:32.642890 msg: success
+INFO: 2015-10-18 17:06:54.100418 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 17:08:12.325041 msg: GET /news?per_page=5&user_id=3&page=1
+INFO: 2015-10-18 17:08:12.367749 msg: success
+INFO: 2015-10-18 17:08:18.031714 msg: DELETE /remove?bookmark_id=10
+INFO: 2015-10-18 17:08:21.199884 msg: list index out of range
+INFO: 2015-10-18 17:08:22.665614 msg: DELETE /remove?bookmark_id=11
+INFO: 2015-10-18 17:08:22.729597 msg: list index out of range
+INFO: 2015-10-18 17:08:24.319754 msg: DELETE /remove?bookmark_id=12
+INFO: 2015-10-18 17:08:24.356496 msg: list index out of range
+INFO: 2015-10-18 17:08:25.495605 msg: DELETE /remove?bookmark_id=13
+INFO: 2015-10-18 17:08:25.532125 msg: list index out of range
+INFO: 2015-10-18 17:08:26.639631 msg: DELETE /remove?bookmark_id=8
+INFO: 2015-10-18 17:08:26.678794 msg: list index out of range
+INFO: 2015-10-18 17:08:27.698580 msg: DELETE /remove?bookmark_id=20
+INFO: 2015-10-18 17:08:27.761845 msg: success
+INFO: 2015-10-18 17:08:55.932488 msg: POST /add
+INFO: 2015-10-18 17:08:55.977265 msg: record created
+INFO: 2015-10-18 17:08:55.989522 msg: news created
+INFO: 2015-10-18 17:09:34.942607 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:09:34.977127 msg: success
+INFO: 2015-10-18 17:09:37.848133 msg: GET /newsownerslist?user_id=4
+INFO: 2015-10-18 17:09:37.890403 msg: success
+INFO: 2015-10-18 17:09:39.718794 msg: GET /issubscribed?owner=3&subscriber=4
+INFO: 2015-10-18 17:09:48.928487 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:09:48.971578 msg: success
+INFO: 2015-10-18 17:09:58.871196 msg: POST /add
+INFO: 2015-10-18 17:09:58.912909 msg: record created
+INFO: 2015-10-18 17:09:58.924993 msg: news created
+INFO: 2015-10-18 17:10:01.311472 msg: GET /news?per_page=5&user_id=4&page=1
+INFO: 2015-10-18 17:10:01.375682 msg: success

@@ -8,6 +8,7 @@ import sys
 def log(message, level):
 	file = open('../news.log', 'a')
 	line = "{0}: {1} msg: {2}\n".format(level, datetime.datetime.now(), message)
+	print line
 	file.write(line)
 	file.close()
 

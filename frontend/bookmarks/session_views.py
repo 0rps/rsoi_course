@@ -1,6 +1,9 @@
 __author__ = 'orps'
 
 from views_settings import *
+from myutils import  *
+
+
 
 @printRequest
 @sessionWrapper
@@ -96,6 +99,8 @@ def user_profile(request, session=None):
 
 	query = "{0}/me?userId={1}".format(sessionServer, user_id)
 	response = requests.get(query)
+	subscriber = session['userId']
+	subscribed = is_subscribed(subscriber, user_id)
 	profile = {}
 	if response.status_code == 200:
 		profile = response.json()
@@ -104,5 +109,6 @@ def user_profile(request, session=None):
 		return HttpResponseBadRequest()
 
 	return render(request, "profile.html", {'logged': session,
+											'subscribed': subscribed,
 											'profile': profile,
 											'my_profile': False, 'user_id': user_id})

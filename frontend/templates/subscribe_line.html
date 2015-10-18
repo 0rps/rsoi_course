@@ -1,4 +1,12 @@
 {% extends "base.html" %}
-{% block title %} Bookmarks {% endblock %}
+{% block title %} News users {% endblock %}
 {% block content %}
+
+
+<br>
+<p><b>You are subscribed to:</b></p>
+{%for profile in profiles%}
+<p><a href="/user?user_id={{profile.user_id}}">{{profile.full_name}}</a></p>
+{%endfor%}
+
 {% endblock %}

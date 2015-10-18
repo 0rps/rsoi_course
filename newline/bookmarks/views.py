@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from django.http import HttpResponse, HttpResponseBadRequest
+from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseServerError
 from django.views.decorators.csrf import csrf_exempt
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
@@ -19,14 +19,14 @@ def printRequest(func):
 
 @csrf_exempt
 @printRequest
-def addBookmark(request):
+def add_bookmark(request):
 
 	par = request.REQUEST
 	user_id = int(par.get('user_id'))
 	bm_id = int(par.get('bookmark_id'))
 	title = par.get('title')
 
-	record = models.Record
+	record = models.Record()
 	record.bookmark_id = bm_id
 	record.title = title
 	record.owner_id = user_id
@@ -36,7 +36,7 @@ def addBookmark(request):
 
 	subscribers = models.Subscriber.objects.filter(owner=user_id)
 	for user in subscribers:
-		link = models.SubscriberNews
+		link = models.SubscriberNews()
 		link.record = record
 		link.subscriber = user
 		link.save()
@@ -48,12 +48,12 @@ def addBookmark(request):
 
 @csrf_exempt
 @printRequest
-def deleteBookmark(request):
+def remove_bookmark(request):
 	par = request.REQUEST
 	bm_id = int(par.get('bookmark_id'))
 
 	try:
-		record = models.Record.objects.get(pk=bm_id)
+		record = models.Record.objects.filter(bookmark_id=bm_id)[0]
 	except Exception as e:
 		loginfo(e.message)
 		return HttpResponse()
@@ -91,14 +91,18 @@ def subscribe(request):
 		loginfo("success")
 		return HttpResponse()
 
-	sbs = models.Subscriber
-	sbs.subscriber = subscriber_id
-	sbs.owner = owner_id
-	sbs.save()
+	try:
+		sbs = models.Subscriber()
+		sbs.subscriber = subscriber_id
+		sbs.owner = owner_id
+		sbs.save()
+	except Exception as e:
+		logerror(e.message)
+		return HttpResponseServerError
 
-	records = models.Record.object.filter(owner_id=owner_id)
+	records = models.Record.objects.filter(owner_id=owner_id)
 	for record in records:
-		news = models.SubscriberNews
+		news = models.SubscriberNews()
 		news.record = record
 		news.subscriber = sbs
 		news.save()
@@ -108,7 +112,7 @@ def subscribe(request):
 
 @csrf_exempt
 @printRequest
-def desubscribe(request):
+def unsubscribe(request):
 	get = request.REQUEST
 	subscriber_id = int(get.get('subscriber'))
 	owner_id = int(get.get('owner'))
@@ -129,7 +133,7 @@ def get_news(request):
 	get = request.GET
 	page = int(get.get('page'))
 	per_page = int(get.get('per_page'))
-	subscriber = int(get.get('subscriber'))
+	subscriber = int(get.get('user_id'))
 
 	objects = models.SubscriberNews.objects.filter(subscriber=subscriber).order_by('record__time')
 	paginator = Paginator(objects, per_page)
@@ -156,16 +160,16 @@ def get_news(request):
 @printRequest
 def get_newsowners_list(request):
 	get = request.GET
-	subscriber = get.get('subscriber')
+	subscriber = get.get('user_id')
 	owners = local_get_newsowners_list(subscriber)
-	data = [str(x.owner_id) for x in owners]
+	data = [str(x.owner) for x in owners]
 	loginfo("success")
 	return HttpResponse(json.dumps(data))
 
 
 def local_get_newsowners_list(subscriber_id):
 	subscriber_id = int(subscriber_id)
-	owners = models.Subscriber.objects.filter(subscriber_id=subscriber_id)
+	owners = models.Subscriber.objects.filter(subscriber=subscriber_id)
 	return owners
 
 def local_is_subscribed(owner_id, subscriber_id):

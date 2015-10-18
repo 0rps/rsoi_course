@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from bookmarks import session_views as sview, bookmarks_views as bview, views
+from bookmarks import session_views as sview, bookmarks_views as bview, news_views as nview, views
 
 
 urlpatterns = patterns('',
@@ -16,4 +16,8 @@ urlpatterns = patterns('',
     url(r'^changebookmark/?$', bview.change_bookmark),
     url(r'^login/?$', sview.login),
     url(r'^logout/?$', sview.logout),
-    url(r'^register/?$', sview.register),)
+    url(r'^register/?$', sview.register),
+    url(r'^subscribe/?$', nview.subscribe),
+    url(r'^unsubscribe/?$', nview.unsubscribe),
+    url(r'^newsowners/?$', nview.get_news_owners),
+    url(r'^news/?$',nview.get_news),)

@@ -31,6 +31,9 @@ def add_bookmark(request, session=None):
 
 			response = requests.post(backendBookmarks + '/addbookmark', parameters)
 			if response.status_code == 200:
+				parameters['id'] = response.json()['bookmark_id']
+				if not add_bookmark_to_news(parameters):
+					logerror("Couldnot add bookmark to news")
 				result = HttpResponseRedirect(frontendServer + '/bookmarks')
 				return result
 			else:
@@ -112,6 +115,9 @@ def remove_bookmark(request, session=None):
 	if response.status_code != 200:
 		logerror("request to backend bookmarks failed")
 		return HttpResponseServerError()
+
+	if not remove_bookmark_from_news(id):
+		logerror("Couldnot remove bookmark from news")
 
 	if curUrl:
 		loginfo("redirect to curPageUrl")

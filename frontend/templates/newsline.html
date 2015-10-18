@@ -1,4 +1,38 @@
 {% extends "base.html" %}
-{% block title %} Bookmarks {% endblock %}
+{% block title %} News {% endblock %}
 {% block content %}
+
+<p><a href="/newsowners">News list users</a></p>
+
+<b>Newsline:</b>
+<table>
+    <tr>
+        <th style="border-right=1px">Title </th>
+        <th>User</th>
+    </tr>
+    {% for bookmark in bookmarks %}
+    <tr>
+        <td style="border-right=1px">
+            <a href="/bookmark?bookmark_id={{bookmark.bookmark_id}}"> {{bookmark.title}}</a</td>
+        <td>
+        <a href="/user?user_id={{bookmark.owner_id}}">{{bookmark.profile.full_name}}</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br>
+<br>
+<table style="width:300; margin:auto">
+    <tr>
+        {%if prevPage %}
+        <td><a href="{{prevPage.url}}">Previous page</a></td>
+        {% endif %}
+        <td>Page {{pageNumber}}</td>
+        {%if nextPage %}
+        <td><a href="{{nextPage.url}}">Next page</a></td>
+        {% endif %}
+    </tr>
+</table>
+
 {% endblock %}

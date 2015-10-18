@@ -49,7 +49,7 @@ def handle_add_bookmark(request):
 		bm_tag.save()
 
 	loginfo("Bookmark added")
-	return HttpResponse()
+	return HttpResponse(json.dumps({'bookmark_id': bm.id}))
 
 
 @csrf_exempt
