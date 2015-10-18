@@ -13,7 +13,7 @@ from bookmarks.log import loginfo, logerror
 # Create your views here.
 
 sessionServer = "http://127.0.0.1:8002"
-backendFavorites = "http://127.0.0.1:8003"
+backendNews = "http://127.0.0.1:8003"
 backendBookmarks = "http://127.0.0.1:8005"
 frontendServer = "http://127.0.0.1:8000"
 
