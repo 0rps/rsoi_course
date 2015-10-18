@@ -1491,3 +1491,757 @@ INFO: 2015-10-18 17:09:59.198938 msg: there is no next page
 INFO: 2015-10-18 17:10:01.212657 msg: GET /news
 INFO: 2015-10-18 17:10:01.441418 msg: there is no prev page
 INFO: 2015-10-18 17:10:01.441621 msg: there is no next page
+INFO: 2015-10-18 18:59:00.881965 msg: GET /index
+INFO: 2015-10-18 18:59:01.910124 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 18:59:01.982896 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-18 18:59:02.059182 msg: there is no prev page
+INFO: 2015-10-18 18:59:02.060199 msg: there is no next page
+INFO: 2015-10-18 18:59:03.400549 msg: GET /index
+INFO: 2015-10-18 18:59:04.466962 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 18:59:04.541222 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=4&user_id=4&page=1&per_page=5
+INFO: 2015-10-18 18:59:04.615032 msg: there is no prev page
+INFO: 2015-10-18 18:59:04.615927 msg: there is no next page
+INFO: 2015-10-18 18:59:05.236064 msg: GET /me
+INFO: 2015-10-18 18:59:06.541535 msg: GET /news
+INFO: 2015-10-18 18:59:06.708793 msg: there is no prev page
+INFO: 2015-10-18 18:59:06.709001 msg: there is no next page
+INFO: 2015-10-18 18:59:10.750104 msg: GET /newsowners
+INFO: 2015-10-18 18:59:10.922777 msg: profile request: 3
+INFO: 2015-10-18 18:59:12.221390 msg: GET /user?user_id=3
+INFO: 2015-10-18 18:59:12.353545 msg: is subscribed request
+INFO: 2015-10-18 18:59:13.661863 msg: GET /userbookmarks?page=1&user_id=3
+INFO: 2015-10-18 18:59:13.739250 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=4&page=1&per_page=5
+INFO: 2015-10-18 18:59:13.813055 msg: there is no prev page
+INFO: 2015-10-18 18:59:13.813375 msg: there is no next page
+INFO: 2015-10-18 18:59:13.814291 msg: profile request: 3
+INFO: 2015-10-18 18:59:15.054745 msg: GET /bookmark?bookmark_id=21
+INFO: 2015-10-18 18:59:17.843760 msg: GET /me
+INFO: 2015-10-18 18:59:18.620738 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 18:59:18.689616 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=4&user_id=4&page=1&per_page=5
+INFO: 2015-10-18 18:59:18.756325 msg: there is no prev page
+INFO: 2015-10-18 18:59:18.756518 msg: there is no next page
+INFO: 2015-10-18 18:59:19.212913 msg: GET /news
+INFO: 2015-10-18 18:59:19.375007 msg: there is no prev page
+INFO: 2015-10-18 18:59:19.375294 msg: there is no next page
+INFO: 2015-10-18 18:59:54.538376 msg: GET /me
+INFO: 2015-10-18 18:59:56.770317 msg: GET /me
+INFO: 2015-10-18 18:59:58.464387 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 18:59:58.536197 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-18 18:59:58.610899 msg: there is no prev page
+INFO: 2015-10-18 18:59:58.611211 msg: there is no next page
+INFO: 2015-10-18 18:59:59.516024 msg: POST /removebookmark
+INFO: 2015-10-18 18:59:59.588902 msg: params: id = 21 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 18:59:59.813214 msg: redirect to curPageUrl
+INFO: 2015-10-18 18:59:59.866768 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 18:59:59.937820 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-18 19:00:00.000877 msg: there is no prev page
+INFO: 2015-10-18 19:00:00.002646 msg: there is no next page
+INFO: 2015-10-18 19:00:00.836586 msg: POST /removebookmark
+INFO: 2015-10-18 19:00:00.905561 msg: params: id = 22 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 19:00:01.117455 msg: redirect to curPageUrl
+INFO: 2015-10-18 19:00:01.183456 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:00:01.259602 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-18 19:00:01.340727 msg: there is no prev page
+INFO: 2015-10-18 19:00:01.340944 msg: there is no next page
+INFO: 2015-10-18 19:00:02.047964 msg: GET /addbookmark
+INFO: 2015-10-18 19:00:11.142647 msg: POST /addbookmark
+INFO: 2015-10-18 19:00:42.575031 msg: GET /bookmarks
+INFO: 2015-10-18 19:00:42.640586 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-18 19:00:42.712707 msg: there is no prev page
+INFO: 2015-10-18 19:00:42.713062 msg: there is no next page
+INFO: 2015-10-18 19:00:57.558509 msg: GET /news
+INFO: 2015-10-18 19:01:02.332108 msg: there is no prev page
+INFO: 2015-10-18 19:01:02.332343 msg: there is no next page
+INFO: 2015-10-18 19:01:05.497345 msg: GET /news
+INFO: 2015-10-18 19:01:07.163644 msg: there is no prev page
+INFO: 2015-10-18 19:01:07.163874 msg: there is no next page
+INFO: 2015-10-18 19:01:16.949915 msg: GET /news
+INFO: 2015-10-18 19:02:30.817338 msg: there is no prev page
+INFO: 2015-10-18 19:02:30.817500 msg: there is no next page
+INFO: 2015-10-18 19:02:33.465181 msg: GET /news
+INFO: 2015-10-18 19:02:38.993524 msg: there is no prev page
+INFO: 2015-10-18 19:02:38.993814 msg: there is no next page
+INFO: 2015-10-18 19:02:43.574829 msg: GET /news
+INFO: 2015-10-18 19:02:59.928315 msg: there is no prev page
+INFO: 2015-10-18 19:02:59.928676 msg: there is no next page
+INFO: 2015-10-18 19:03:02.350519 msg: GET /news
+INFO: 2015-10-18 19:03:44.878710 msg: there is no prev page
+INFO: 2015-10-18 19:03:44.878978 msg: there is no next page
+INFO: 2015-10-18 19:04:03.851012 msg: GET /news
+INFO: 2015-10-18 19:04:10.901932 msg: there is no prev page
+INFO: 2015-10-18 19:04:10.902342 msg: there is no next page
+INFO: 2015-10-18 19:04:26.485373 msg: GET /addbookmark
+INFO: 2015-10-18 19:04:32.807900 msg: POST /addbookmark
+INFO: 2015-10-18 19:05:01.957621 msg: GET /bookmarks
+INFO: 2015-10-18 19:05:02.022984 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-18 19:05:02.097497 msg: there is no prev page
+INFO: 2015-10-18 19:05:02.097737 msg: there is no next page
+INFO: 2015-10-18 19:05:25.790083 msg: GET /news
+INFO: 2015-10-18 19:05:28.544952 msg: there is no prev page
+INFO: 2015-10-18 19:05:28.547683 msg: there is no next page
+INFO: 2015-10-18 19:05:28.547828 msg: profile request: 3
+INFO: 2015-10-18 19:06:21.969144 msg: GET /register/
+INFO: 2015-10-18 19:06:22.086588 msg: GET /index
+INFO: 2015-10-18 19:11:56.893501 msg: GET /
+INFO: 2015-10-18 19:11:56.893790 msg: session is None
+INFO: 2015-10-18 19:12:24.709767 msg: GET /register
+INFO: 2015-10-18 19:12:24.709975 msg: session is None
+INFO: 2015-10-18 19:12:40.692369 msg: POST /register
+INFO: 2015-10-18 19:12:40.692752 msg: session is None
+INFO: 2015-10-18 19:12:40.900665 msg: GET /login
+INFO: 2015-10-18 19:12:40.900890 msg: session is None
+INFO: 2015-10-18 19:12:46.261671 msg: POST /login
+INFO: 2015-10-18 19:12:46.261899 msg: session is None
+INFO: 2015-10-18 19:12:46.382062 msg: GET /index
+INFO: 2015-10-18 19:12:55.052247 msg: GET /search?search_text=%23first
+INFO: 2015-10-18 19:12:55.216345 msg: there is no prev page
+INFO: 2015-10-18 19:12:55.216537 msg: there is no next page
+INFO: 2015-10-18 19:12:58.768806 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:12:58.856698 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-18 19:12:58.935034 msg: there is no prev page
+INFO: 2015-10-18 19:12:58.935419 msg: there is no next page
+INFO: 2015-10-18 19:13:00.510761 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:13:00.596007 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=4&user_id=4&page=1&per_page=5
+INFO: 2015-10-18 19:13:00.677615 msg: there is no prev page
+INFO: 2015-10-18 19:13:00.677828 msg: there is no next page
+INFO: 2015-10-18 19:13:05.187726 msg: GET /search?search_text=%23four
+INFO: 2015-10-18 19:13:05.342599 msg: there is no prev page
+INFO: 2015-10-18 19:13:05.342750 msg: there is no next page
+INFO: 2015-10-18 19:13:05.342859 msg: profile request: 3
+INFO: 2015-10-18 19:13:06.578671 msg: GET /user?user_id=3
+INFO: 2015-10-18 19:13:06.717433 msg: is subscribed request
+INFO: 2015-10-18 19:13:08.573207 msg: GET /subscribe?user_id=3
+INFO: 2015-10-18 19:13:08.642013 msg: is subscribed request
+INFO: 2015-10-18 19:13:11.518451 msg: GET /user?user_id=3
+INFO: 2015-10-18 19:13:11.685756 msg: is subscribed request
+INFO: 2015-10-18 19:13:13.754066 msg: GET /news
+INFO: 2015-10-18 19:13:16.033567 msg: there is no prev page
+INFO: 2015-10-18 19:13:16.033829 msg: there is no next page
+INFO: 2015-10-18 19:13:16.033984 msg: profile request: 3
+INFO: 2015-10-18 19:13:23.169588 msg: GET /newsowners
+INFO: 2015-10-18 19:13:23.347862 msg: profile request: 3
+INFO: 2015-10-18 19:13:24.275518 msg: GET /user?user_id=3
+INFO: 2015-10-18 19:13:24.424928 msg: is subscribed request
+INFO: 2015-10-18 19:13:25.443286 msg: GET /unsubscribe?user_id=3
+INFO: 2015-10-18 19:13:25.524691 msg: is subscribed request
+INFO: 2015-10-18 19:13:25.841945 msg: GET /user?user_id=3
+INFO: 2015-10-18 19:13:25.972735 msg: is subscribed request
+INFO: 2015-10-18 19:13:28.255044 msg: GET /news
+INFO: 2015-10-18 19:13:31.766501 msg: there is no prev page
+INFO: 2015-10-18 19:13:31.766672 msg: there is no next page
+INFO: 2015-10-18 19:13:35.838566 msg: GET /news
+INFO: 2015-10-18 19:13:36.060708 msg: there is no prev page
+INFO: 2015-10-18 19:13:36.061566 msg: there is no next page
+INFO: 2015-10-18 19:13:36.061737 msg: profile request: 3
+INFO: 2015-10-18 19:13:38.128393 msg: GET /bookmark?bookmark_id=23
+INFO: 2015-10-18 19:13:44.413958 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:13:44.500548 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-18 19:13:44.586064 msg: there is no prev page
+INFO: 2015-10-18 19:13:44.586312 msg: there is no next page
+INFO: 2015-10-18 19:14:28.983750 msg: GET /news
+INFO: 2015-10-18 19:14:29.209896 msg: there is no prev page
+INFO: 2015-10-18 19:14:29.210173 msg: there is no next page
+INFO: 2015-10-18 19:14:30.663971 msg: GET /me
+INFO: 2015-10-18 19:14:32.025765 msg: GET /news
+INFO: 2015-10-18 19:14:32.203857 msg: there is no prev page
+INFO: 2015-10-18 19:14:32.204196 msg: there is no next page
+INFO: 2015-10-18 19:14:39.929540 msg: GET /search?search_text=%23four
+INFO: 2015-10-18 19:14:40.066504 msg: there is no prev page
+INFO: 2015-10-18 19:14:40.066735 msg: there is no next page
+INFO: 2015-10-18 19:14:40.066851 msg: profile request: 3
+INFO: 2015-10-18 19:14:44.414463 msg: GET /user?user_id=3
+INFO: 2015-10-18 19:14:44.567204 msg: is subscribed request
+INFO: 2015-10-18 19:14:46.098341 msg: GET /subscribe?user_id=3
+INFO: 2015-10-18 19:14:46.167527 msg: is subscribed request
+INFO: 2015-10-18 19:14:49.479874 msg: GET /user?user_id=3
+INFO: 2015-10-18 19:14:49.635058 msg: is subscribed request
+INFO: 2015-10-18 19:14:51.634634 msg: GET /news
+INFO: 2015-10-18 19:14:51.814957 msg: there is no prev page
+INFO: 2015-10-18 19:14:51.815759 msg: there is no next page
+INFO: 2015-10-18 19:14:51.816743 msg: profile request: 3
+INFO: 2015-10-18 19:14:55.800921 msg: GET /addbookmark
+INFO: 2015-10-18 19:15:06.806745 msg: POST /addbookmark
+INFO: 2015-10-18 19:15:10.611243 msg: GET /bookmarks
+INFO: 2015-10-18 19:15:10.684879 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-18 19:15:10.762963 msg: there is no prev page
+INFO: 2015-10-18 19:15:10.763263 msg: there is no next page
+INFO: 2015-10-18 19:15:13.532288 msg: GET /news
+INFO: 2015-10-18 19:15:13.728335 msg: there is no prev page
+INFO: 2015-10-18 19:15:13.729602 msg: there is no next page
+INFO: 2015-10-18 19:15:13.729867 msg: profile request: 3
+INFO: 2015-10-18 19:15:16.181056 msg: GET /news
+INFO: 2015-10-18 19:15:16.421769 msg: there is no prev page
+INFO: 2015-10-18 19:15:16.422014 msg: there is no next page
+INFO: 2015-10-18 19:15:16.422204 msg: profile request: 3
+INFO: 2015-10-18 19:15:21.640229 msg: POST /removebookmark
+INFO: 2015-10-18 19:15:21.723657 msg: params: id = 23 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 19:15:21.970869 msg: redirect to curPageUrl
+INFO: 2015-10-18 19:15:22.040452 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:15:22.127068 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=3&user_id=3&page=1&per_page=5
+INFO: 2015-10-18 19:15:22.211025 msg: there is no prev page
+INFO: 2015-10-18 19:15:22.211264 msg: there is no next page
+INFO: 2015-10-18 19:15:24.455435 msg: GET /news
+INFO: 2015-10-18 19:15:24.663869 msg: there is no prev page
+INFO: 2015-10-18 19:15:24.664071 msg: there is no next page
+INFO: 2015-10-18 19:15:24.664271 msg: profile request: 3
+INFO: 2015-10-18 19:15:26.220937 msg: GET /news
+INFO: 2015-10-18 19:15:26.456072 msg: there is no prev page
+INFO: 2015-10-18 19:15:26.456227 msg: there is no next page
+INFO: 2015-10-18 19:15:26.456397 msg: profile request: 3
+INFO: 2015-10-18 19:15:35.843814 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:15:35.925766 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=4&user_id=4&page=1&per_page=5
+INFO: 2015-10-18 19:15:36.001769 msg: there is no prev page
+INFO: 2015-10-18 19:15:36.002772 msg: there is no next page
+INFO: 2015-10-18 19:15:39.131499 msg: GET /addbookmark
+INFO: 2015-10-18 19:15:47.197339 msg: POST /addbookmark
+INFO: 2015-10-18 19:15:47.617601 msg: GET /bookmarks
+INFO: 2015-10-18 19:15:47.677027 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=4&user_id=4&page=1&per_page=5
+INFO: 2015-10-18 19:15:47.755676 msg: there is no prev page
+INFO: 2015-10-18 19:15:47.756100 msg: there is no next page
+INFO: 2015-10-18 19:16:24.068819 msg: GET /search?search_text=%23fix
+INFO: 2015-10-18 19:16:24.209546 msg: there is no prev page
+INFO: 2015-10-18 19:16:24.209784 msg: there is no next page
+INFO: 2015-10-18 19:16:28.038732 msg: GET /search?search_text=%23six
+INFO: 2015-10-18 19:16:28.181639 msg: there is no prev page
+INFO: 2015-10-18 19:16:28.184960 msg: there is no next page
+INFO: 2015-10-18 19:16:28.185494 msg: profile request: 4
+INFO: 2015-10-18 19:16:29.612051 msg: GET /user?user_id=4
+INFO: 2015-10-18 19:16:29.737630 msg: is subscribed request
+INFO: 2015-10-18 19:16:31.201316 msg: GET /subscribe?user_id=4
+INFO: 2015-10-18 19:16:31.279754 msg: is subscribed request
+INFO: 2015-10-18 19:16:31.596177 msg: GET /user?user_id=4
+INFO: 2015-10-18 19:16:31.742947 msg: is subscribed request
+INFO: 2015-10-18 19:16:33.832690 msg: GET /news
+INFO: 2015-10-18 19:16:34.039565 msg: there is no prev page
+INFO: 2015-10-18 19:16:34.039844 msg: there is next page
+INFO: 2015-10-18 19:16:34.040096 msg: profile request: 4
+INFO: 2015-10-18 19:16:34.105310 msg: profile request: 3
+INFO: 2015-10-18 19:16:42.634579 msg: GET /bookmark?bookmark_id=17
+ERROR: 2015-10-18 19:16:42.854464 msg: There is no bookmark
+INFO: 2015-10-18 19:16:45.039333 msg: GET /bookmark?bookmark_id=16
+ERROR: 2015-10-18 19:16:45.241127 msg: There is no bookmark
+INFO: 2015-10-18 19:16:47.234751 msg: GET /bookmark?bookmark_id=19
+INFO: 2015-10-18 19:16:53.782491 msg: GET /bookmark?bookmark_id=25
+INFO: 2015-10-18 19:16:56.268353 msg: GET /bookmark?bookmark_id=24
+INFO: 2015-10-18 19:17:04.532749 msg: GET /news?page=2
+INFO: 2015-10-18 19:17:04.728834 msg: there is prev page
+INFO: 2015-10-18 19:17:04.729114 msg: there is no next page
+INFO: 2015-10-18 19:17:04.729246 msg: profile request: 4
+INFO: 2015-10-18 19:17:06.054954 msg: GET /bookmark?bookmark_id=26
+INFO: 2015-10-18 19:17:10.166982 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:17:10.234658 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:17:10.303021 msg: there is no prev page
+INFO: 2015-10-18 19:17:10.303475 msg: there is no next page
+INFO: 2015-10-18 19:17:11.430579 msg: GET /addbookmark
+INFO: 2015-10-18 19:17:38.097169 msg: POST /addbookmark
+INFO: 2015-10-18 19:17:38.470966 msg: GET /bookmarks
+INFO: 2015-10-18 19:17:38.562871 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:17:38.656067 msg: there is no prev page
+INFO: 2015-10-18 19:17:38.656269 msg: there is no next page
+INFO: 2015-10-18 19:17:40.464821 msg: GET /bookmark?bookmark_id=27
+ERROR: 2015-10-18 19:17:40.694233 msg: There is no bookmark
+INFO: 2015-10-18 19:17:44.936866 msg: GET /bookmark?bookmark_id=27
+ERROR: 2015-10-18 19:17:45.156949 msg: There is no bookmark
+INFO: 2015-10-18 19:17:46.773127 msg: GET /changebookmark?pageurl=http%3A%2F%2F127.0.0.1%3A8000%2Fbookmarks%3Fpage%3D1&id=27
+ERROR: 2015-10-18 19:17:47.020804 msg: wrong query to bookback
+INFO: 2015-10-18 19:17:55.279507 msg: GET /bookmark?bookmark_id=27
+ERROR: 2015-10-18 19:17:55.523885 msg: There is no bookmark
+INFO: 2015-10-18 19:18:36.845253 msg: GET /bookmark?bookmark_id=27
+ERROR: 2015-10-18 19:18:45.173315 msg: There is no bookmark
+INFO: 2015-10-18 19:19:08.835513 msg: GET /addbookmark
+INFO: 2015-10-18 19:19:26.007910 msg: POST /addbookmark
+INFO: 2015-10-18 19:19:26.411626 msg: GET /bookmarks
+INFO: 2015-10-18 19:19:26.478902 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:19:26.551702 msg: there is no prev page
+INFO: 2015-10-18 19:19:26.552086 msg: there is no next page
+INFO: 2015-10-18 19:19:27.827971 msg: GET /bookmark?bookmark_id=28
+INFO: 2015-10-18 19:20:24.630682 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:20:24.691667 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:20:24.767921 msg: there is no prev page
+INFO: 2015-10-18 19:20:24.768204 msg: there is no next page
+INFO: 2015-10-18 19:20:26.047899 msg: GET /news
+INFO: 2015-10-18 19:20:26.253702 msg: there is no prev page
+INFO: 2015-10-18 19:20:26.253917 msg: there is next page
+INFO: 2015-10-18 19:20:26.254051 msg: profile request: 4
+INFO: 2015-10-18 19:20:26.321805 msg: profile request: 3
+INFO: 2015-10-18 19:20:31.292023 msg: GET /news?page=2
+INFO: 2015-10-18 19:20:31.538633 msg: there is prev page
+INFO: 2015-10-18 19:20:31.538817 msg: there is no next page
+INFO: 2015-10-18 19:20:31.538960 msg: profile request: 4
+INFO: 2015-10-18 19:20:33.259583 msg: GET /news?page=1
+INFO: 2015-10-18 19:20:33.452284 msg: there is no prev page
+INFO: 2015-10-18 19:20:33.452844 msg: there is next page
+INFO: 2015-10-18 19:20:33.453270 msg: profile request: 4
+INFO: 2015-10-18 19:20:33.527993 msg: profile request: 3
+INFO: 2015-10-18 19:20:56.224487 msg: GET /news
+INFO: 2015-10-18 19:20:56.454694 msg: there is no prev page
+INFO: 2015-10-18 19:20:56.455233 msg: there is next page
+INFO: 2015-10-18 19:20:56.455688 msg: profile request: 4
+INFO: 2015-10-18 19:20:56.524715 msg: profile request: 3
+INFO: 2015-10-18 19:20:57.677699 msg: GET /news?page=2
+INFO: 2015-10-18 19:20:57.889237 msg: there is prev page
+INFO: 2015-10-18 19:20:57.889415 msg: there is no next page
+INFO: 2015-10-18 19:20:57.894514 msg: profile request: 4
+INFO: 2015-10-18 19:20:59.033804 msg: GET /news?page=1
+INFO: 2015-10-18 19:20:59.250697 msg: there is no prev page
+INFO: 2015-10-18 19:20:59.250907 msg: there is next page
+INFO: 2015-10-18 19:20:59.251060 msg: profile request: 4
+INFO: 2015-10-18 19:20:59.321159 msg: profile request: 3
+INFO: 2015-10-18 19:21:08.419074 msg: GET /bookmark?bookmark_id=24
+INFO: 2015-10-18 19:21:16.792274 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:21:16.861928 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:21:16.937838 msg: there is no prev page
+INFO: 2015-10-18 19:21:16.938060 msg: there is no next page
+INFO: 2015-10-18 19:21:17.916816 msg: POST /removebookmark
+INFO: 2015-10-18 19:21:17.986037 msg: params: id = 27 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 19:21:18.208908 msg: redirect to curPageUrl
+INFO: 2015-10-18 19:21:18.235068 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:21:18.321950 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:21:18.410104 msg: there is no prev page
+INFO: 2015-10-18 19:21:18.410305 msg: there is no next page
+INFO: 2015-10-18 19:21:20.365986 msg: GET /bookmark?bookmark_id=28
+INFO: 2015-10-18 19:21:29.104994 msg: GET /news
+INFO: 2015-10-18 19:21:29.366191 msg: there is no prev page
+INFO: 2015-10-18 19:21:29.366377 msg: there is next page
+INFO: 2015-10-18 19:21:29.366692 msg: profile request: 4
+INFO: 2015-10-18 19:21:29.428865 msg: profile request: 3
+INFO: 2015-10-18 19:21:30.378595 msg: GET /newsowners
+INFO: 2015-10-18 19:21:30.571844 msg: profile request: 3
+INFO: 2015-10-18 19:21:30.646999 msg: profile request: 4
+INFO: 2015-10-18 19:21:32.445861 msg: GET /user?user_id=3
+INFO: 2015-10-18 19:21:32.583511 msg: is subscribed request
+INFO: 2015-10-18 19:21:33.811009 msg: GET /unsubscribe?user_id=3
+INFO: 2015-10-18 19:21:33.878547 msg: is subscribed request
+INFO: 2015-10-18 19:21:34.191709 msg: GET /user?user_id=3
+INFO: 2015-10-18 19:21:34.358115 msg: is subscribed request
+INFO: 2015-10-18 19:21:35.408488 msg: GET /news
+INFO: 2015-10-18 19:21:35.612411 msg: there is no prev page
+INFO: 2015-10-18 19:21:35.612652 msg: there is no next page
+INFO: 2015-10-18 19:21:35.612817 msg: profile request: 4
+INFO: 2015-10-18 19:21:39.468025 msg: GET /newsowners
+INFO: 2015-10-18 19:21:39.669447 msg: profile request: 4
+INFO: 2015-10-18 19:21:40.526778 msg: GET /user?user_id=4
+INFO: 2015-10-18 19:21:40.668201 msg: is subscribed request
+INFO: 2015-10-18 19:21:41.622971 msg: GET /unsubscribe?user_id=4
+INFO: 2015-10-18 19:21:41.690394 msg: is subscribed request
+INFO: 2015-10-18 19:21:41.989760 msg: GET /user?user_id=4
+INFO: 2015-10-18 19:21:42.121522 msg: is subscribed request
+INFO: 2015-10-18 19:21:44.337805 msg: GET /news
+INFO: 2015-10-18 19:21:44.505023 msg: there is no prev page
+INFO: 2015-10-18 19:21:44.505210 msg: there is no next page
+INFO: 2015-10-18 19:21:46.378846 msg: GET /subscribe?user_id=4
+INFO: 2015-10-18 19:21:46.449512 msg: is subscribed request
+INFO: 2015-10-18 19:21:46.777040 msg: GET /user?user_id=4
+INFO: 2015-10-18 19:21:46.932098 msg: is subscribed request
+INFO: 2015-10-18 19:21:47.731272 msg: GET /news
+INFO: 2015-10-18 19:21:47.930974 msg: there is no prev page
+INFO: 2015-10-18 19:21:47.931322 msg: there is no next page
+INFO: 2015-10-18 19:21:47.931487 msg: profile request: 4
+INFO: 2015-10-18 19:24:05.586189 msg: GET /logout
+INFO: 2015-10-18 19:24:05.586671 msg: GET /logout
+INFO: 2015-10-18 19:24:05.937825 msg: GET /index
+INFO: 2015-10-18 19:24:05.938086 msg: session is None
+INFO: 2015-10-18 19:24:08.388115 msg: GET /login
+INFO: 2015-10-18 19:24:08.388812 msg: session is None
+INFO: 2015-10-18 19:24:16.634188 msg: POST /login
+INFO: 2015-10-18 19:24:16.635559 msg: session is None
+INFO: 2015-10-18 19:24:16.753247 msg: GET /index
+INFO: 2015-10-18 19:24:18.060454 msg: GET /logout
+INFO: 2015-10-18 19:24:18.238705 msg: GET /index
+INFO: 2015-10-18 19:24:18.238908 msg: session is None
+INFO: 2015-10-18 19:24:22.461987 msg: GET /login
+INFO: 2015-10-18 19:24:22.462177 msg: session is None
+INFO: 2015-10-18 19:24:26.819844 msg: POST /login
+INFO: 2015-10-18 19:24:26.820086 msg: session is None
+INFO: 2015-10-18 19:24:26.937303 msg: GET /index
+INFO: 2015-10-18 19:24:28.624840 msg: GET /logout
+INFO: 2015-10-18 19:24:28.815883 msg: GET /index
+INFO: 2015-10-18 19:24:28.816130 msg: session is None
+INFO: 2015-10-18 19:24:29.697096 msg: GET /register
+INFO: 2015-10-18 19:24:29.697599 msg: session is None
+INFO: 2015-10-18 19:25:32.795217 msg: GET /
+INFO: 2015-10-18 19:25:32.795532 msg: session is None
+INFO: 2015-10-18 19:25:34.238858 msg: GET /login
+INFO: 2015-10-18 19:25:34.240527 msg: session is None
+INFO: 2015-10-18 19:25:52.255013 msg: POST /login
+INFO: 2015-10-18 19:25:52.256529 msg: session is None
+INFO: 2015-10-18 19:25:52.354746 msg: GET /index
+INFO: 2015-10-18 19:26:00.759223 msg: GET /search?search_text=%23six
+INFO: 2015-10-18 19:26:00.913247 msg: there is no prev page
+INFO: 2015-10-18 19:26:00.913495 msg: there is no next page
+INFO: 2015-10-18 19:26:00.913719 msg: profile request: 4
+INFO: 2015-10-18 19:31:02.490847 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:31:02.589245 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:31:02.655458 msg: there is no prev page
+INFO: 2015-10-18 19:31:02.655628 msg: there is no next page
+INFO: 2015-10-18 19:31:04.921695 msg: GET /addbookmark
+INFO: 2015-10-18 19:31:20.969021 msg: POST /addbookmark
+INFO: 2015-10-18 19:31:21.223683 msg: GET /bookmarks
+INFO: 2015-10-18 19:31:21.286086 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:31:21.357377 msg: there is no prev page
+INFO: 2015-10-18 19:31:21.357537 msg: there is no next page
+INFO: 2015-10-18 19:31:23.200118 msg: GET /bookmark?bookmark_id=29
+INFO: 2015-10-18 19:31:27.833602 msg: GET /changebookmark?pageurl=http%3A%2F%2F127.0.0.1%3A8000%2Fbookmarks%3Fpage%3D1&id=29
+INFO: 2015-10-18 19:32:01.575968 msg: POST /changebookmark?pageurl=http%3A%2F%2F127.0.0.1%3A8000%2Fbookmarks%3Fpage%3D1&id=29
+INFO: 2015-10-18 19:32:01.770245 msg: GET /bookmarks
+INFO: 2015-10-18 19:32:01.860132 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:32:01.934513 msg: there is no prev page
+INFO: 2015-10-18 19:32:01.934695 msg: there is no next page
+INFO: 2015-10-18 19:32:06.028179 msg: GET /search?search_text=%23first
+INFO: 2015-10-18 19:32:06.172083 msg: there is no prev page
+INFO: 2015-10-18 19:32:06.172259 msg: there is no next page
+INFO: 2015-10-18 19:32:06.172525 msg: profile request: 5
+INFO: 2015-10-18 19:32:13.330914 msg: GET /me
+INFO: 2015-10-18 19:32:17.039198 msg: GET /bookmark?bookmark_id=29
+INFO: 2015-10-18 19:32:28.425691 msg: GET /search?search_text=%23first
+INFO: 2015-10-18 19:32:28.571679 msg: there is no prev page
+INFO: 2015-10-18 19:32:28.572034 msg: there is no next page
+INFO: 2015-10-18 19:32:28.572187 msg: profile request: 5
+INFO: 2015-10-18 19:32:37.677191 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:32:37.749857 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:32:37.843076 msg: there is no prev page
+INFO: 2015-10-18 19:32:37.843598 msg: there is no next page
+INFO: 2015-10-18 19:32:38.839690 msg: GET /addbookmark
+INFO: 2015-10-18 19:32:47.717239 msg: POST /addbookmark
+INFO: 2015-10-18 19:32:47.969568 msg: GET /bookmarks
+INFO: 2015-10-18 19:32:48.049780 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:32:48.130919 msg: there is no prev page
+INFO: 2015-10-18 19:32:48.131966 msg: there is no next page
+INFO: 2015-10-18 19:32:50.526839 msg: GET /changebookmark?pageurl=http%3A%2F%2F127.0.0.1%3A8000%2Fbookmarks%3Fpage%3D1&id=30
+INFO: 2015-10-18 19:33:15.354176 msg: POST /changebookmark?pageurl=http%3A%2F%2F127.0.0.1%3A8000%2Fbookmarks%3Fpage%3D1&id=30
+INFO: 2015-10-18 19:33:15.548106 msg: GET /bookmarks
+INFO: 2015-10-18 19:33:15.644256 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:33:15.737190 msg: there is no prev page
+INFO: 2015-10-18 19:33:15.737411 msg: there is no next page
+INFO: 2015-10-18 19:33:17.281851 msg: GET /addbookmark
+INFO: 2015-10-18 19:33:30.404664 msg: POST /addbookmark
+INFO: 2015-10-18 19:33:56.821390 msg: GET /bookmarks
+INFO: 2015-10-18 19:33:56.901374 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:33:56.974323 msg: there is no prev page
+INFO: 2015-10-18 19:33:56.974615 msg: there is no next page
+INFO: 2015-10-18 19:34:11.839251 msg: GET /bookmark?bookmark_id=31
+INFO: 2015-10-18 19:34:14.656683 msg: GET /changebookmark?pageurl=http%3A%2F%2F127.0.0.1%3A8000%2Fbookmarks%3Fpage%3D1&id=31
+INFO: 2015-10-18 19:35:10.467989 msg: GET /addbookmark
+INFO: 2015-10-18 19:35:20.392530 msg: POST /addbookmark
+INFO: 2015-10-18 19:36:59.717078 msg: GET /bookmarks
+INFO: 2015-10-18 19:36:59.812198 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:36:59.935637 msg: there is no prev page
+INFO: 2015-10-18 19:36:59.935907 msg: there is no next page
+INFO: 2015-10-18 19:38:48.901492 msg: GET /changebookmark?pageurl=http%3A%2F%2F127.0.0.1%3A8000%2Fbookmarks%3Fpage%3D1&id=32
+INFO: 2015-10-18 19:40:58.768612 msg: GET /addbookmark
+INFO: 2015-10-18 19:41:09.495717 msg: POST /addbookmark
+INFO: 2015-10-18 19:41:13.160485 msg: GET /bookmarks
+INFO: 2015-10-18 19:41:13.240206 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:41:13.428849 msg: there is no prev page
+INFO: 2015-10-18 19:41:13.429044 msg: there is next page
+INFO: 2015-10-18 19:41:38.189480 msg: GET /bookmarks?page=2
+INFO: 2015-10-18 19:41:38.284039 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=2&per_page=5
+INFO: 2015-10-18 19:41:38.449783 msg: there is prev page
+INFO: 2015-10-18 19:41:38.449992 msg: there is no next page
+INFO: 2015-10-18 19:41:39.515990 msg: GET /bookmark?bookmark_id=33
+INFO: 2015-10-18 19:43:28.846491 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:43:28.925358 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:43:29.064991 msg: there is no prev page
+INFO: 2015-10-18 19:43:29.065435 msg: there is next page
+INFO: 2015-10-18 19:43:31.732454 msg: POST /removebookmark
+INFO: 2015-10-18 19:43:31.821499 msg: params: id = 28 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 19:43:32.171601 msg: redirect to curPageUrl
+INFO: 2015-10-18 19:43:32.204343 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:43:32.293751 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:43:32.409727 msg: there is no prev page
+INFO: 2015-10-18 19:43:32.409727 msg: there is no next page
+INFO: 2015-10-18 19:43:33.318868 msg: POST /removebookmark
+INFO: 2015-10-18 19:43:33.385448 msg: params: id = 29 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 19:43:33.638546 msg: redirect to curPageUrl
+INFO: 2015-10-18 19:43:33.676892 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:43:33.751918 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:43:33.882178 msg: there is no prev page
+INFO: 2015-10-18 19:43:33.883769 msg: there is no next page
+INFO: 2015-10-18 19:43:34.658903 msg: POST /removebookmark
+INFO: 2015-10-18 19:43:34.733421 msg: params: id = 30 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 19:43:35.015972 msg: redirect to curPageUrl
+INFO: 2015-10-18 19:43:35.051924 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:43:35.142489 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:43:35.278241 msg: there is no prev page
+INFO: 2015-10-18 19:43:35.278407 msg: there is no next page
+INFO: 2015-10-18 19:43:36.268398 msg: GET /changebookmark?pageurl=http%3A%2F%2F127.0.0.1%3A8000%2Fbookmarks%3Fpage%3D1&id=33
+INFO: 2015-10-18 19:43:47.017833 msg: GET /addbookmark
+INFO: 2015-10-18 19:44:15.216965 msg: POST /addbookmark
+INFO: 2015-10-18 19:44:42.443632 msg: GET /bookmarks
+INFO: 2015-10-18 19:44:42.529254 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:44:42.662867 msg: there is no prev page
+INFO: 2015-10-18 19:44:42.663210 msg: there is no next page
+INFO: 2015-10-18 19:51:23.428545 msg: GET /bookmark?bookmark_id=34
+INFO: 2015-10-18 19:52:39.387018 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:52:39.475075 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:52:39.987222 msg: there is no prev page
+INFO: 2015-10-18 19:52:39.987404 msg: there is no next page
+INFO: 2015-10-18 19:52:41.021380 msg: GET /addbookmark
+INFO: 2015-10-18 19:52:47.132826 msg: POST /addbookmark
+INFO: 2015-10-18 19:56:56.366072 msg: GET /bookmarks
+INFO: 2015-10-18 19:56:56.451990 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:56:56.596468 msg: there is no prev page
+INFO: 2015-10-18 19:56:56.596776 msg: there is no next page
+INFO: 2015-10-18 19:56:58.414539 msg: POST /removebookmark
+INFO: 2015-10-18 19:56:58.527788 msg: params: id = 35 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 19:56:58.924933 msg: redirect to curPageUrl
+INFO: 2015-10-18 19:56:58.982391 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:56:59.068174 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:57:05.033838 msg: GET /bookmarks
+INFO: 2015-10-18 19:57:05.130102 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:57:06.141628 msg: status code is 500
+ERROR: 2015-10-18 19:57:06.142577 msg: request to bookmarks backend failed
+INFO: 2015-10-18 19:57:07.614075 msg: GET /bookmarks
+INFO: 2015-10-18 19:57:07.692925 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:57:08.486810 msg: status code is 500
+ERROR: 2015-10-18 19:57:08.489195 msg: request to bookmarks backend failed
+INFO: 2015-10-18 19:57:10.008156 msg: GET /addbookmark
+INFO: 2015-10-18 19:57:14.268847 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:57:14.341790 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:57:15.218125 msg: status code is 500
+ERROR: 2015-10-18 19:57:15.219714 msg: request to bookmarks backend failed
+INFO: 2015-10-18 19:57:17.208119 msg: GET /index
+INFO: 2015-10-18 19:57:18.246435 msg: GET /me
+INFO: 2015-10-18 19:57:19.036263 msg: GET /news
+INFO: 2015-10-18 19:57:19.262021 msg: there is no prev page
+INFO: 2015-10-18 19:57:19.262204 msg: there is no next page
+INFO: 2015-10-18 19:57:19.262614 msg: profile request: 4
+INFO: 2015-10-18 19:59:15.171481 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:59:15.264338 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:59:16.033707 msg: status code is 500
+ERROR: 2015-10-18 19:59:16.034172 msg: request to bookmarks backend failed
+INFO: 2015-10-18 19:59:35.029348 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:59:35.115253 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:59:35.970123 msg: status code is 500
+ERROR: 2015-10-18 19:59:35.970279 msg: request to bookmarks backend failed
+INFO: 2015-10-18 19:59:39.978320 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:59:40.071972 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:59:41.069362 msg: status code is 500
+ERROR: 2015-10-18 19:59:41.069523 msg: request to bookmarks backend failed
+INFO: 2015-10-18 19:59:53.516151 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 19:59:53.589878 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 19:59:54.369737 msg: status code is 500
+ERROR: 2015-10-18 19:59:54.369737 msg: request to bookmarks backend failed
+INFO: 2015-10-18 20:00:01.220528 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:00:01.296290 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:00:02.086229 msg: status code is 500
+ERROR: 2015-10-18 20:00:02.086481 msg: request to bookmarks backend failed
+INFO: 2015-10-18 20:00:34.033011 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:00:34.156243 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:00:34.931508 msg: status code is 500
+ERROR: 2015-10-18 20:00:34.931757 msg: request to bookmarks backend failed
+INFO: 2015-10-18 20:01:07.175987 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:01:11.016666 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:01:42.331036 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:01:45.432547 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:01:45.438103 msg: status code is 500
+ERROR: 2015-10-18 20:01:45.438391 msg: request to bookmarks backend failed
+INFO: 2015-10-18 20:01:51.521428 msg: there is no prev page
+INFO: 2015-10-18 20:01:51.522267 msg: there is no next page
+INFO: 2015-10-18 20:01:53.740693 msg: POST /removebookmark
+INFO: 2015-10-18 20:01:53.821328 msg: params: id = 34 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 20:01:54.154869 msg: redirect to curPageUrl
+INFO: 2015-10-18 20:01:54.189304 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:01:54.270163 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:01:54.410567 msg: there is no prev page
+INFO: 2015-10-18 20:01:54.410802 msg: there is no next page
+INFO: 2015-10-18 20:01:55.047520 msg: POST /removebookmark
+INFO: 2015-10-18 20:01:55.120118 msg: params: id = 33 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 20:01:55.434669 msg: redirect to curPageUrl
+INFO: 2015-10-18 20:01:55.464917 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:01:55.547319 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:01:55.709844 msg: there is no prev page
+INFO: 2015-10-18 20:01:55.710089 msg: there is no next page
+INFO: 2015-10-18 20:01:56.280385 msg: POST /removebookmark
+INFO: 2015-10-18 20:01:56.365155 msg: params: id = 32 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 20:01:56.662052 msg: redirect to curPageUrl
+INFO: 2015-10-18 20:01:56.711535 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:01:56.807204 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:01:56.946027 msg: there is no prev page
+INFO: 2015-10-18 20:01:56.946461 msg: there is no next page
+INFO: 2015-10-18 20:01:57.845508 msg: GET /addbookmark
+INFO: 2015-10-18 20:02:04.797320 msg: POST /addbookmark
+INFO: 2015-10-18 20:02:13.818984 msg: GET /bookmarks
+INFO: 2015-10-18 20:02:13.909431 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:02:14.079105 msg: there is no prev page
+INFO: 2015-10-18 20:02:14.079477 msg: there is no next page
+INFO: 2015-10-18 20:02:15.424891 msg: GET /changebookmark?pageurl=http%3A%2F%2F127.0.0.1%3A8000%2Fbookmarks%3Fpage%3D1&id=36
+INFO: 2015-10-18 20:02:32.580206 msg: GET /addbookmark
+INFO: 2015-10-18 20:02:37.024499 msg: POST /addbookmark
+INFO: 2015-10-18 20:03:04.272045 msg: GET /bookmarks
+INFO: 2015-10-18 20:03:04.342640 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:03:04.500794 msg: there is no prev page
+INFO: 2015-10-18 20:03:04.500994 msg: there is no next page
+INFO: 2015-10-18 20:03:07.037197 msg: GET /bookmark?bookmark_id=37
+INFO: 2015-10-18 20:13:18.977405 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:13:19.074136 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:13:19.237453 msg: there is no prev page
+INFO: 2015-10-18 20:13:19.240905 msg: there is no next page
+INFO: 2015-10-18 20:13:22.131575 msg: GET /bookmark?bookmark_id=37
+INFO: 2015-10-18 20:13:28.130243 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:13:28.218187 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:13:28.384310 msg: there is no prev page
+INFO: 2015-10-18 20:13:28.384530 msg: there is no next page
+INFO: 2015-10-18 20:13:29.509275 msg: GET /changebookmark?pageurl=http%3A%2F%2F127.0.0.1%3A8000%2Fbookmarks%3Fpage%3D1&id=37
+INFO: 2015-10-18 20:13:41.109078 msg: GET /news
+INFO: 2015-10-18 20:13:41.413917 msg: there is no prev page
+INFO: 2015-10-18 20:13:41.414079 msg: there is no next page
+INFO: 2015-10-18 20:13:41.414195 msg: profile request: 4
+INFO: 2015-10-18 20:13:42.924275 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:13:43.008773 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:13:43.141559 msg: there is no prev page
+INFO: 2015-10-18 20:13:43.141729 msg: there is no next page
+INFO: 2015-10-18 20:13:45.182898 msg: GET /addbookmark
+INFO: 2015-10-18 20:13:50.836061 msg: POST /addbookmark
+INFO: 2015-10-18 20:13:51.159974 msg: GET /bookmarks
+INFO: 2015-10-18 20:13:51.259614 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:13:51.380700 msg: there is no prev page
+INFO: 2015-10-18 20:13:51.380898 msg: there is no next page
+INFO: 2015-10-18 20:13:54.839588 msg: GET /search?search_text=%23first
+INFO: 2015-10-18 20:13:55.099555 msg: there is no prev page
+INFO: 2015-10-18 20:13:55.099756 msg: there is no next page
+INFO: 2015-10-18 20:13:58.390982 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:13:58.463603 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:13:58.595471 msg: there is no prev page
+INFO: 2015-10-18 20:13:58.595733 msg: there is no next page
+INFO: 2015-10-18 20:14:04.006423 msg: GET /search?search_text=%23siz
+INFO: 2015-10-18 20:14:04.265071 msg: there is no prev page
+INFO: 2015-10-18 20:14:04.265317 msg: there is no next page
+INFO: 2015-10-18 20:14:06.327905 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:14:06.405795 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:14:06.523581 msg: there is no prev page
+INFO: 2015-10-18 20:14:06.523776 msg: there is no next page
+INFO: 2015-10-18 20:14:08.600071 msg: POST /removebookmark
+INFO: 2015-10-18 20:14:08.681542 msg: params: id = 36 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 20:14:08.972667 msg: redirect to curPageUrl
+INFO: 2015-10-18 20:14:09.005105 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:14:09.101603 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:14:09.239733 msg: there is no prev page
+INFO: 2015-10-18 20:14:09.239899 msg: there is no next page
+INFO: 2015-10-18 20:14:10.499488 msg: POST /removebookmark
+INFO: 2015-10-18 20:14:10.580505 msg: params: id = 37 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 20:14:10.834826 msg: redirect to curPageUrl
+INFO: 2015-10-18 20:14:10.862660 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:14:10.938585 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:14:11.054324 msg: there is no prev page
+INFO: 2015-10-18 20:14:11.054778 msg: there is no next page
+INFO: 2015-10-18 20:14:11.749397 msg: POST /removebookmark
+INFO: 2015-10-18 20:14:11.828116 msg: params: id = 38 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 20:14:12.102949 msg: redirect to curPageUrl
+INFO: 2015-10-18 20:14:12.144164 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:14:12.223532 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:14:12.396684 msg: there is no prev page
+INFO: 2015-10-18 20:14:12.396852 msg: there is no next page
+INFO: 2015-10-18 20:14:13.064550 msg: GET /bookmark?bookmark_id=31
+INFO: 2015-10-18 20:14:15.625055 msg: GET /changebookmark?pageurl=http%3A%2F%2F127.0.0.1%3A8000%2Fbookmarks%3Fpage%3D1&id=31
+INFO: 2015-10-18 20:14:18.534715 msg: POST /removebookmark
+INFO: 2015-10-18 20:14:18.604374 msg: params: id = 31 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 20:14:18.902438 msg: redirect to curPageUrl
+INFO: 2015-10-18 20:14:18.943702 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:14:19.025545 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:14:19.167424 msg: there is no prev page
+INFO: 2015-10-18 20:14:19.167677 msg: there is no next page
+INFO: 2015-10-18 20:14:20.749489 msg: GET /addbookmark
+INFO: 2015-10-18 20:14:26.773755 msg: POST /addbookmark
+INFO: 2015-10-18 20:14:27.271342 msg: GET /bookmarks
+INFO: 2015-10-18 20:14:27.359016 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:14:27.501239 msg: there is no prev page
+INFO: 2015-10-18 20:14:27.501534 msg: there is no next page
+INFO: 2015-10-18 20:14:31.599701 msg: GET /search?search_text=%23second
+INFO: 2015-10-18 20:14:31.839948 msg: there is no prev page
+INFO: 2015-10-18 20:14:31.840174 msg: there is no next page
+INFO: 2015-10-18 20:14:31.840415 msg: profile request: 4
+INFO: 2015-10-18 20:14:38.708739 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:14:38.782768 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:14:38.901852 msg: there is no prev page
+INFO: 2015-10-18 20:14:38.902166 msg: there is no next page
+INFO: 2015-10-18 20:14:41.280414 msg: GET /bookmark?bookmark_id=39
+INFO: 2015-10-18 20:14:43.294524 msg: GET /changebookmark?pageurl=http%3A%2F%2F127.0.0.1%3A8000%2Fbookmarks%3Fpage%3D1&id=39
+INFO: 2015-10-18 20:15:14.366178 msg: GET /addbookmark
+INFO: 2015-10-18 20:15:20.645017 msg: POST /addbookmark
+INFO: 2015-10-18 20:15:21.192110 msg: GET /bookmarks
+INFO: 2015-10-18 20:15:21.283593 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:15:21.424270 msg: there is no prev page
+INFO: 2015-10-18 20:15:21.424508 msg: there is no next page
+INFO: 2015-10-18 20:15:32.109897 msg: GET /search?search_text=%23five
+INFO: 2015-10-18 20:15:32.362996 msg: there is no prev page
+INFO: 2015-10-18 20:15:32.363395 msg: there is no next page
+INFO: 2015-10-18 20:15:32.364182 msg: profile request: 3
+INFO: 2015-10-18 20:15:32.432774 msg: profile request: 5
+INFO: 2015-10-18 20:15:34.833604 msg: GET /user?user_id=5
+INFO: 2015-10-18 20:15:34.937355 msg: GET /me
+INFO: 2015-10-18 20:15:36.488576 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:15:36.571341 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:15:36.661478 msg: there is no prev page
+INFO: 2015-10-18 20:15:36.661970 msg: there is no next page
+INFO: 2015-10-18 20:15:40.108409 msg: GET /search?search_text=%23second
+INFO: 2015-10-18 20:15:40.317877 msg: there is no prev page
+INFO: 2015-10-18 20:15:40.318037 msg: there is no next page
+INFO: 2015-10-18 20:15:40.318226 msg: profile request: 4
+INFO: 2015-10-18 20:15:43.752174 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:15:43.835032 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:15:43.997436 msg: there is no prev page
+INFO: 2015-10-18 20:15:44.000067 msg: there is no next page
+INFO: 2015-10-18 20:15:45.101772 msg: POST /removebookmark
+INFO: 2015-10-18 20:15:45.177714 msg: params: id = 39 currentPageUrl = http://127.0.0.1:8000/bookmarks?page=1
+INFO: 2015-10-18 20:15:45.541472 msg: redirect to curPageUrl
+INFO: 2015-10-18 20:15:45.585564 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:15:45.654689 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:15:45.770753 msg: there is no prev page
+INFO: 2015-10-18 20:15:45.771165 msg: there is no next page
+INFO: 2015-10-18 20:15:46.946344 msg: GET /addbookmark
+INFO: 2015-10-18 20:15:53.603088 msg: POST /addbookmark
+INFO: 2015-10-18 20:15:54.110725 msg: GET /bookmarks
+INFO: 2015-10-18 20:15:54.195964 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:15:54.299358 msg: there is no prev page
+INFO: 2015-10-18 20:15:54.299540 msg: there is no next page
+INFO: 2015-10-18 20:15:57.316834 msg: GET /search?search_text=%23second
+INFO: 2015-10-18 20:15:57.548343 msg: there is no prev page
+INFO: 2015-10-18 20:15:57.548620 msg: there is no next page
+INFO: 2015-10-18 20:15:57.551487 msg: profile request: 4
+INFO: 2015-10-18 20:15:57.620920 msg: profile request: 5
+INFO: 2015-10-18 20:16:09.328759 msg: GET /search?search_text=%23second+%23changed
+INFO: 2015-10-18 20:16:09.561654 msg: there is no prev page
+INFO: 2015-10-18 20:16:09.561852 msg: there is no next page
+INFO: 2015-10-18 20:16:09.562042 msg: profile request: 4
+INFO: 2015-10-18 20:16:13.908891 msg: GET /bookmark?bookmark_id=19
+INFO: 2015-10-18 20:16:15.092056 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:16:15.176211 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=5&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:16:15.325200 msg: there is no prev page
+INFO: 2015-10-18 20:16:15.329126 msg: there is no next page
+INFO: 2015-10-18 20:16:15.804540 msg: GET /news
+INFO: 2015-10-18 20:16:16.060670 msg: there is no prev page
+INFO: 2015-10-18 20:16:16.060988 msg: there is no next page
+INFO: 2015-10-18 20:16:16.061138 msg: profile request: 4
+INFO: 2015-10-18 20:16:22.534843 msg: GET /search?search_text=%23six
+INFO: 2015-10-18 20:16:22.744304 msg: there is no prev page
+INFO: 2015-10-18 20:16:22.744570 msg: there is no next page
+INFO: 2015-10-18 20:16:22.744759 msg: profile request: 4
+INFO: 2015-10-18 20:16:28.270332 msg: GET /me
+INFO: 2015-10-18 20:16:41.985115 msg: GET /search?search_text=%23second
+INFO: 2015-10-18 20:16:42.242952 msg: there is no prev page
+INFO: 2015-10-18 20:16:42.243473 msg: there is no next page
+INFO: 2015-10-18 20:16:42.243752 msg: profile request: 4
+INFO: 2015-10-18 20:16:42.312829 msg: profile request: 5
+INFO: 2015-10-18 20:16:44.180014 msg: GET /bookmarks?page=1
+INFO: 2015-10-18 20:16:44.262605 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=4&user_id=4&page=1&per_page=5
+INFO: 2015-10-18 20:16:44.428958 msg: there is no prev page
+INFO: 2015-10-18 20:16:44.429284 msg: there is no next page
+INFO: 2015-10-18 20:16:52.370982 msg: GET /addbookmark
+INFO: 2015-10-18 20:16:59.989529 msg: POST /addbookmark
+INFO: 2015-10-18 20:17:07.314347 msg: GET /bookmarks
+INFO: 2015-10-18 20:17:07.391991 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=4&user_id=4&page=1&per_page=5
+INFO: 2015-10-18 20:17:07.521349 msg: there is no prev page
+INFO: 2015-10-18 20:17:07.521572 msg: there is no next page
+INFO: 2015-10-18 20:17:14.678179 msg: GET /search?search_text=%23second
+INFO: 2015-10-18 20:17:14.946262 msg: there is no prev page
+INFO: 2015-10-18 20:17:14.946631 msg: there is no next page
+INFO: 2015-10-18 20:17:14.948010 msg: profile request: 4
+INFO: 2015-10-18 20:17:15.023467 msg: profile request: 5
+INFO: 2015-10-18 20:17:24.278729 msg: GET /user?user_id=4
+INFO: 2015-10-18 20:17:24.423655 msg: is subscribed request
+INFO: 2015-10-18 20:17:25.546634 msg: GET /userbookmarks?page=1&user_id=4
+INFO: 2015-10-18 20:17:25.616732 msg: http://127.0.0.1:8005/bookmarks?bookmarks_user_id=4&user_id=5&page=1&per_page=5
+INFO: 2015-10-18 20:17:25.742860 msg: there is no prev page
+INFO: 2015-10-18 20:17:25.744514 msg: there is no next page
+INFO: 2015-10-18 20:17:25.744760 msg: profile request: 4

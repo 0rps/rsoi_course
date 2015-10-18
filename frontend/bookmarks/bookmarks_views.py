@@ -80,10 +80,11 @@ def change_bookmark(request, session=None):
 
 		data = {'title': response['title'],
 				'description': response['description'],
-				'is_public': bool(response['is_public']),
+				'is_public': response['is_public'] == 'True',
 				'bookmark_id': int(bid)}
 		form = forms.BookmarkForm(initial=data)
 		form.fields['title'].widget.attrs['readonly'] = True
+		form.fields['is_public'].widget.attrs['disabled'] = True
 
 	parameters = {'form': form, 'logged': session, 'action_name': 'Save bookmark', 'title_name': 'Change bookmark'}
 
@@ -152,6 +153,7 @@ def get_bookmark(request, session=None):
 
 	parameters = {'logged': session, 'bookmark': responce}
 	return render(request, 'bookmark.html', parameters)
+
 
 @require_http_methods(['GET'])
 @printRequest

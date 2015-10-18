@@ -8,7 +8,7 @@ class RegisterForm(forms.Form):
 	name = forms.CharField(label=mark_safe('<br>Your name<br>'), max_length=32)
 	last_name = forms.CharField(label=mark_safe('<br>Your surname<br>'), max_length=32)
 	email = forms.EmailField(label=mark_safe('<br>Email<br>'))
-	password = forms.CharField(label=mark_safe('<br>Password<br>'), max_length=32)
+	password = forms.CharField(label=mark_safe('<br>Password<br>'), max_length=32, widget=forms.PasswordInput)
 
 	def json(self):
 		data = self.cleaned_data
@@ -24,8 +24,8 @@ class RegisterForm(forms.Form):
 
 class BookmarkForm(forms.Form):
 	title = forms.CharField(label=mark_safe('<br>Bookmark title<br>'), max_length=None)
-	description = forms.CharField(label=mark_safe('<br>Your description<br>'), max_length=None)
-	is_public = forms.BooleanField(label=mark_safe('<br>Is public<br>'))
+	description = forms.CharField(label=mark_safe('<br>Your description<br>'), max_length=None, widget=forms.Textarea)
+	is_public = forms.BooleanField(label=mark_safe('<br>Is public<br>'), required=False)
 	bookmark_id = forms.IntegerField(widget=forms.HiddenInput(), required=False)
 
 	def json(self):
@@ -33,7 +33,7 @@ class BookmarkForm(forms.Form):
 
 		result = {'title': data['title'],
 				  'description': data['description'],
-				  'is_public': data['is_public']}
+				  'is_public': data['is_public'] }
 
 
 		return result
@@ -47,7 +47,7 @@ class BookmarkForm(forms.Form):
 
 class SigninForm(forms.Form):
 	email = forms.EmailField(label=mark_safe('<br>Your email<br>'))
-	password = forms.CharField(label=mark_safe('<br>Your password<br>'), max_length=32)
+	password = forms.CharField(label=mark_safe('<br>Your password<br>'), max_length=32, widget=forms.PasswordInput)
 
 	def json(self):
 		data = self.cleaned_data

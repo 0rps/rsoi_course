@@ -135,7 +135,7 @@ def get_news(request):
 	per_page = int(get.get('per_page'))
 	subscriber = int(get.get('user_id'))
 
-	objects = models.SubscriberNews.objects.filter(subscriber=subscriber).order_by('record__time')
+	objects = models.SubscriberNews.objects.filter(subscriber__subscriber=subscriber).order_by('record__time')
 	paginator = Paginator(objects, per_page)
 
 	try:

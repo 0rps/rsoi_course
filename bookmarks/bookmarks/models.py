@@ -74,34 +74,3 @@ def get_tags(str_tags):
 	return result
 
 
-def get_user_via_id(user_id):
-	pass
-	#result = User.objects.get(id=int(user_id))
-	#return result
-def get_user_via_email(email):
-	pass
-	#result = User.objects.filter(email=email)
-	#return result[0] if len(result) > 0 else None
-def generate_cookie(user_id):
-	pass
-	#cookie = Cookie()
-	#cookie.userId = user_id
-	#cookie.lastTime = datetime.now()
-	#str_id = str(user_id)
-	#msc = str(datetime.now().microsecond)
-	#cookie.token = hashlib.md5(str_id + msc).hexdigest()
-	#cookie.save()
-	#return cookie
-def get_cookie(cookie_id, token):
-	pass
-	#cookie_list = Cookie.objects.filter(id=Decimal(cookie_id))
-	#if len(cookie_list) > 0 and cookie_list[0].token == token:
-	#		cookie = cookie_list[0]
-	#	dt = datetime.utcnow()
-	#	dt_cookie = cookie.lastTime
-	#	delta = dt - dt_cookie
-	#	if delta < timedelta(hours=2):
-	#		cookie.refresh()
-	#		return cookie
-
-	#return None

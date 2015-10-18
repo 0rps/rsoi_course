@@ -35,6 +35,8 @@ def remove_bookmark_from_news(bookmark_id):
 	return response.status_code == 200
 
 def add_bookmark_to_news(params):
+	if not bool(params['is_public']):
+		return True
 	data = {}
 	data['user_id'] = params['user_id']
 	data['bookmark_id'] = params['id']

@@ -28,10 +28,14 @@ def handle_add_bookmark(request):
 	put = request.REQUEST
 
 	bm = models.Bookmark()
-	bm.is_public = put.get('is_public')
+	is_public = put.get('is_public')
+	if is_public == 'False':
+		bm.is_public = False
+	else:
+		bm.is_public = True
 	bm.description = put.get('description')
 	bm.title = put.get('title')
-	bm.user_id = put.get('user_id')
+	bm.user_id = int(put.get('user_id'))
 	bm.username = put.get('username')
 
 	try:
@@ -39,6 +43,10 @@ def handle_add_bookmark(request):
 	except Exception as e:
 		logerror(e.message)
 		return HttpResponseBadRequest
+
+	if not bm.is_public:
+		loginfo("Bookmark added")
+		return HttpResponse(json.dumps({'bookmark_id': bm.id}))
 
 	raw_tags = models.split_title_on_tags(bm.title)
 	tags = models.get_tags(raw_tags)
@@ -88,7 +96,7 @@ def handle_change_bookmark(request):
 	if bm.user_id != int(post.get('user_id')):
 		return HttpResponseBadRequest()
 
-	bm.is_public = bool(post.get('is_public'))
+	#bm.is_public = bool(post.get('is_public'))
 	bm.description = post.get('description')
 	bm.time = datetime.now()
 	bm.save()
