@@ -7,4 +7,5 @@ urlpatterns = patterns('', url(r'^bookmarks/?$', views.handle_get_user_bookmarks
 					   url(r'^addbookmark/?$', views.handle_add_bookmark),
 					   url(r'^changebookmark/?$', views.handle_change_bookmark),
 					   url(r'^removebookmark/?$', views.handle_remove_bookmark),
-					   url(r'^bookmark/?$', views.handle_get_user_bookmark),)
+					   url(r'^bookmark/?$', views.handle_get_user_bookmark),
+					   url(r'^search/?$', views.handle_search_bookmarks),)

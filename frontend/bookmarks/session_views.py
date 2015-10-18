@@ -91,10 +91,10 @@ def user_profile(request, session=None):
 		logerror("user_id is None")
 		return HttpResponseBadRequest()
 
-	#if int(session['userId']) == int(user_id):
-	#	return HttpResponseRedirect("/me")
+	if int(session['userId']) == int(user_id):
+		return HttpResponseRedirect("/me")
 
-	query = "{0}/me?userId={1}".format(sessionServer, session['userId'])
+	query = "{0}/me?userId={1}".format(sessionServer, user_id)
 	response = requests.get(query)
 	profile = {}
 	if response.status_code == 200:

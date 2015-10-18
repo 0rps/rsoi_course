@@ -216,9 +216,10 @@ def search_bookmarks(request, session=None):
 	if page is None:
 		page = 1
 
-	query = "{0}/search?search_text={1}&page={2}&per_page={3}".format(backendBookmarks,
-																	  page, 5)
-	response = requests.get(query)
+	parms = {'search_text': text, 'page':page, 'per_page':5}
+
+	query = "{0}/search".format(backendBookmarks)
+	response = requests.get(query, params=parms)
 	if response.status_code != 200:
 		logerror("error in query to backbook")
 		return HttpResponseBadRequest()
@@ -252,7 +253,7 @@ def search_bookmarks(request, session=None):
 			profiles[user_id] = get_profile(user_id)
 		book['profile'] = profiles[user_id]
 
-	return render(request, "user_bookmarks.html", {'logged': session,
+	return render(request, "search.html", {'logged': session,
 												   'text': text,
 											  'bookmarks': bookmarks,
 											  'pageNumber': page_number,

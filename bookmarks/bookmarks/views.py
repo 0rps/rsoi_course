@@ -59,16 +59,18 @@ def handle_remove_bookmark(request):
 	bm_id = delete.get('bookmark_id')
 	user_id = delete.get('user_id')
 
-	if bm_id is None or  user_id is None:
+	if bm_id is None or user_id is None:
 		logerror("Some params is NONE")
 		return HttpResponseBadRequest
 
 	bm_id = int(bm_id)
 	user_id = int(user_id)
 
-	#TODO: delete tags
-
 	bookmark = models.Bookmark.objects.get(pk=bm_id)
+	tags = models.BookmarkTag.objects.filter(bookmark=bookmark)
+	for tag in tags:
+		tag.delete()
+
 	if user_id == bookmark.user_id:
 		bookmark.delete()
 		return HttpResponse()
@@ -91,39 +93,57 @@ def handle_change_bookmark(request):
 	bm.time = datetime.now()
 	bm.save()
 
-	#TODO: delete all old tags
-
-	tags = models.get_tags(models.split_title_on_tags(bm.title))
-	for tag in tags:
-		bm_tag = models.BookmarkTag()
-		bm_tag.tag = tag
-		bm_tag.bookmark = bm
-		bm_tag.save()
-
 	return HttpResponse()
 
 
 @printRequest
 def handle_search_bookmarks(request):
 	get = request.GET
-	user_id = get.get('user_id')
-	query = get.get('query')
-	raw_tags = models.split_title_on_tags(query)
+	text = get.get('search_text')
+	page = get.get('page')
+	per_page = get.get('per_page')
+
+	raw_tags = models.split_title_on_tags(text)
 	tags = map(lambda x: models.find_tag(x), raw_tags)
-	flag = True
+
+	non_null_tags = []
 	for x in tags:
-		if x is None:
-			# TODO: answer json
-			return HttpResponse()
+		if x:
+			non_null_tags.append(x)
+	tags = non_null_tags
 
-	objects = models.BookmarkTag.objects.filter(tag__in=tags).annotate(num=Count('bookmark'))
-	ans = []
-	for obj in objects:
-		if obj.num < len(tags):
-			continue
-		ans.append(obj.bookmark)
+	if len(tags) == 0:
+		data = {'cur_page': 1, 'pages': 1, 'objects':[]}
+		return HttpResponse(json.dumps(data))
 
-	return ans
+	objects = models.BookmarkTag.objects.filter(tag__in=tags)
+	objects = objects.filter(bookmark__is_public=True)
+	objects = objects.values('bookmark')
+	objects = objects.annotate(num=Count('bookmark'))
+	objects = objects.filter(num__gte=len(tags))
+	objects = objects.order_by('bookmark__time')
+
+	paginator = Paginator(objects, per_page)
+	try:
+		result = paginator.page(page)
+	except PageNotAnInteger:
+		page = 1
+		result = paginator.page(page)
+	except EmptyPage:
+		page = paginator.num_pages
+		result = paginator.page(paginator.num_pages)
+
+	pages_count = paginator.num_pages
+
+	objects=[]
+	for x in result.object_list:
+		bm = models.Bookmark.objects.get(pk=x['bookmark'])
+		objects.append(bm.short_json())
+
+	data = {'objects': objects, 'pages': pages_count, 'cur_page': page}
+	data = json.dumps(data)
+
+	return HttpResponse(data)
 
 
 @printRequest
